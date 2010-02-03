@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="insert-folder">
+		<locale lang="fr">insert.folder {documentlabel}</locale>
+	</entity>
+	<entity id="log-insert-folder">
+		<locale lang="fr">log-insert-folder</locale>
+	</entity>
+	<entity id="update-folder">
+		<locale lang="fr">update.folder {documentlabel}</locale>
+	</entity>
+	<entity id="log-update-folder">
+		<locale lang="fr">log-update-folder</locale>
+	</entity>
+	<entity id="savepermissions-folder">
+		<locale lang="fr">savepermissions.folder {documentlabel}</locale>
+	</entity>
+	<entity id="log-savepermissions-folder">
+		<locale lang="fr">log-savepermissions-folder</locale>
+	</entity>
+	<entity id="delete-folder">
+		<locale lang="fr">delete.folder {documentlabel}</locale>
+	</entity>
+	<entity id="log-delete-folder">
+		<locale lang="fr">log-delete-folder</locale>
+	</entity>
+	<entity id="insert-editablelist">
+		<locale lang="fr">insert.editablelist {documentlabel}</locale>
+	</entity>
+	<entity id="log-insert-editablelist">
+		<locale lang="fr">log-insert-editablelist</locale>
+	</entity>
+	<entity id="insert-item">
+		<locale lang="fr">insert.item {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-insert-item">
+		<locale lang="fr">log-insert-item</locale>
+	</entity>
+	<entity id="updatetranslation-item">
+		<locale lang="fr">updatetranslation.item {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-updatetranslation-item">
+		<locale lang="fr">log-updatetranslation-item</locale>
+	</entity>
+	<entity id="update-editablelist">
+		<locale lang="fr">update.editablelist {documentlabel}</locale>
+	</entity>
+	<entity id="log-update-editablelist">
+		<locale lang="fr">log-update-editablelist</locale>
+	</entity>
+	<entity id="deletelocalization-item">
+		<locale lang="fr">deletelocalization.item {documentlabel} {lang}</locale>
+	</entity>
+	<entity id="log-deletelocalization-item">
+		<locale lang="fr">log-deletelocalization-item</locale>
+	</entity>
+	<entity id="delete-item">
+		<locale lang="fr">delete.item {documentlabel} {lang}</locale>
+	</entity>
+	<entity id="log-delete-item">
+		<locale lang="fr">log-delete-item</locale>
+	</entity>
+	<entity id="move-systemfolder">
+		<locale lang="fr">move.systemfolder {destinationlabel} {documentlabel}</locale>
+	</entity>
+	<entity id="log-move-systemfolder">
+		<locale lang="fr">log-move-systemfolder</locale>
+	</entity>
+	<entity id="insert-valuededitablelist">
+		<locale lang="fr">insert.valuededitablelist {documentlabel}</locale>
+	</entity>
+	<entity id="log-insert-valuededitablelist">
+		<locale lang="fr">log-insert-valuededitablelist</locale>
+	</entity>
+	<entity id="update-valuededitablelist">
+		<locale lang="fr">update.valuededitablelist {documentlabel}</locale>
+	</entity>
+	<entity id="log-update-valuededitablelist">
+		<locale lang="fr">log-update-valuededitablelist</locale>
+	</entity>
+	<entity id="insert-valueditem">
+		<locale lang="fr">insert.valueditem {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-insert-valueditem">
+		<locale lang="fr">log-insert-valueditem</locale>
+	</entity>
+	<entity id="update-valueditem">
+		<locale lang="fr">update.valueditem {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-update-valueditem">
+		<locale lang="fr">log-update-valueditem</locale>
+	</entity>
+	<entity id="updatetranslation-valueditem">
+		<locale lang="fr">updatetranslation.valueditem {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-updatetranslation-valueditem">
+		<locale lang="fr">log-updatetranslation-valueditem</locale>
+	</entity>
+	<entity id="deactivated-valueditem">
+		<locale lang="fr">deactivated.valueditem {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-deactivated-valueditem">
+		<locale lang="fr">log-deactivated-valueditem</locale>
+	</entity>
+	<entity id="reactivate-valueditem">
+		<locale lang="fr">reactivate.valueditem {lang} {documentlabel}</locale>
+	</entity>
+	<entity id="log-reactivate-valueditem">
+		<locale lang="fr">log-reactivate-valueditem</locale>
+	</entity>
+	<entity id="deletelocalization-valueditem">
+		<locale lang="fr">deletelocalization.valueditem {documentlabel} {lang}</locale>
+	</entity>
+	<entity id="log-deletelocalization-valueditem">
+		<locale lang="fr">log-deletelocalization-valueditem</locale>
+	</entity>
+	<entity id="delete-valueditem">
+		<locale lang="fr">delete.valueditem {documentlabel} {lang}</locale>
+	</entity>
+	<entity id="log-delete-valueditem">
+		<locale lang="fr">log-delete-valueditem</locale>
+	</entity>
+	<entity id="move-valuededitablelist">
+		<locale lang="fr">move.valuededitablelist {destinationlabel} {documentlabel}</locale>
+	</entity>
+	<entity id="log-move-valuededitablelist">
+		<locale lang="fr">log-move-valuededitablelist</locale>
+	</entity>
+	<entity id="move-folder">
+		<locale lang="fr">move.folder {destinationlabel} {documentlabel}</locale>
+	</entity>
+	<entity id="log-move-folder">
+		<locale lang="fr">log-move-folder</locale>
+	</entity>
+<entity id="update-staticlist"><locale lang="fr">update.staticlist {documentlabel}</locale></entity><entity id="log-update-staticlist"><locale lang="fr">log-update-staticlist</locale></entity><entity id="update-dynamiclist"><locale lang="fr">update.dynamiclist {documentlabel}</locale></entity><entity id="log-update-dynamiclist"><locale lang="fr">log-update-dynamiclist</locale></entity></localization>

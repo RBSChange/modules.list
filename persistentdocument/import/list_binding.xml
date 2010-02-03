@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/generic/persistentdocument/import/generic_binding.xml" />
+
+	<binding name="editablelist" className="list_EditablelistScriptDocumentElement" />
+	<binding name="item" className="list_ItemScriptDocumentElement" />
+
+	<binding name="valuededitablelist" className="list_ValuededitablelistScriptDocumentElement" />
+	<binding name="valueditem" className="list_ValueditemScriptDocumentElement" />
+
+	<binding name="staticlist" className="list_StaticlistScriptDocumentElement" />
+	<binding name="staticitem" className="list_StaticitemElement" />
+
+	<binding name="dynamiclist" className="list_DynamiclistScriptDocumentElement" />
+
+	<binding name="list" className="list_ListScriptDocumentElement" />
+
+	<!-- Deprecated use item -->
+	<binding name="editableitem" className="list_ItemScriptDocumentElement" />
+	<!-- Deprecated use valuededitablelist -->
+	<binding name="editablevaluedlist" className="list_ValuededitablelistScriptDocumentElement" />
+</script>

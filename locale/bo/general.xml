@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="module-name">
+    <locale lang="fr">listes</locale>
+    <locale lang="en">lists</locale>
+    <locale lang="de">Listen</locale>
+  </entity>
+  <entity id="tree-root-name">
+    <locale lang="fr">listes</locale>
+    <locale lang="en">lists</locale>
+    <locale lang="de">Listen</locale>
+  </entity>
+  <entity id="system-folder-name">
+    <locale lang="fr">listes</locale>
+    <locale lang="en">lists</locale>
+    <locale lang="de">Listen</locale>
+  </entity>
+  <entity id="column.nbitems">
+    <locale lang="fr">élements</locale>
+    <locale lang="en">items</locale>
+  </entity>
+  <entity id="column.listid">
+    <locale lang="fr">Code de la liste</locale>
+  </entity>
+</localization>

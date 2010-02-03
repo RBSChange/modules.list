@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<actions>
+	<action name="createItem">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+    		this.createDocumentEditor('modules_list_item', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+	<action name="createEditablelist">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+    		this.createDocumentEditor('modules_list_editablelist', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+	<action name="createValuededitablelist" label="&amp;modules.list.bo.actions.Create-Valuededitablelist;" icon="cubes_blue_add">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			this.createDocumentEditor('modules_list_valuededitablelist', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+	<action name="createValueditem">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			this.createDocumentEditor('modules_list_valueditem', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+	<action name="createFolder">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			this.createDocumentEditor('modules_list_folder', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+
+	<action name="deleteIsActive">
+		<parameter name="itemData"/>
+		<body><![CDATA[
+			return itemData.canBeDeleted !== 'false';
+		]]></body>
+	</action>
+
+	<action name="openTreeNodeOrder">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			this.openOrderChildrenPanel(listWidget, null, null, null);
+		]]></body>
+	</action>
+</actions>

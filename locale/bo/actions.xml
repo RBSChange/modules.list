@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="Create_">
+    <locale lang="fr">Créer</locale>
+    <locale lang="en">Create</locale>
+    <locale lang="de">Neu</locale>
+  </entity>
+  <entity id="create-editablelist">
+    <locale lang="fr">créer une liste</locale>
+    <locale lang="en">create a list</locale>
+    <locale lang="de">eine Liste erstellen</locale>
+  </entity>
+  <entity id="create-item">
+    <locale lang="fr">créer une valeur de liste</locale>
+    <locale lang="en">create a list value</locale>
+    <locale lang="de">einen Listenwert erstellen</locale>
+  </entity>
+  <entity id="create-valuededitablelist">
+    <locale lang="fr">créer une liste clé valeur</locale>
+    <locale lang="en">create a list key value</locale>
+    <locale lang="de">einen Schlüsselwert für die Liste</locale>
+  </entity>
+  <entity id="create-valueditem">
+    <locale lang="fr">créer une valeur de liste</locale>
+    <locale lang="en">create a list value</locale>
+    <locale lang="de">einen Listenwert erstellen</locale>
+  </entity>
+</localization>

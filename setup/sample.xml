@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+	<rootfolder module="list">
+		<folder byLabel="Exemples">
+			<dynamiclist listid="modules_list/sampledynamic"
+				description="Exemple de liste dynamique" label="Exemple de liste dynamique" />
+
+			<staticlist listid="modules_list/samplestatic"
+				description="Exemple de liste statique" label="Exemple de liste statique">
+				<staticitem label="&amp;modules.website.bo.general.visibility.Visible;"
+					value="1" />
+				<staticitem
+					label="&amp;modules.website.bo.general.visibility.Hidden-in-menu-only;"
+					value="2" />
+				<staticitem label="&amp;modules.website.bo.general.visibility.Visible;"
+					value="0" />
+			</staticlist>
+
+			<editablelist listid="modules_list/sampleeditable"
+				label="Exemple de liste éditable" description="Exemple de liste éditable">
+				<item label-fr="Oui" label-en="Yes" />
+				<item label-fr="Non" label-en="No" />
+			</editablelist>
+
+			<valuededitablelist listid="modules_list/samplezipcode"
+				description="Liste des codes postaux" label="Liste des codes postaux">
+				<valueditem label="01 - Ain" value="01" />
+				<valueditem label="02 - Aisne" value="02" />
+				<valueditem label="03 - Allier" value="03" />
+			</valuededitablelist>
+		</folder>
+	</rootfolder>
+</script>

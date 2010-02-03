@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+  <entity id="modules-list-getpreferencesdocument">
+    <locale lang="fr">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : "Ouvrir les préférences"</locale>
+    <locale lang="en">you don't have the appropriate permission to perform this operation : "Open preferences window"</locale>
+    <locale lang="de">Sie haben nicht die Rechte folgende Aktion durchzuführen:"Präferenzen öffnen"</locale>
+  </entity>
+  <entity id="modules-list-order">
+    <locale lang="fr">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : "Modifier l'ordre des éléments"</locale>
+    <locale lang="en">you don't have the appropriate permission to perform this operation : "Sort out the elements"</locale>
+    <locale lang="de">Sie haben nicht die Rechte folgende Aktion durchzuführen:"Reihenfolge der Elemente ändern"</locale>
+  </entity>
+  <entity id="modules-list-enabled">
+    <locale lang="fr">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : "Accès au module"</locale>
+    <locale lang="en">you don't have the appropriate permission to perform this operation : "Access to the module"</locale>
+    <locale lang="de">Sie haben nicht die Rechte folgende Aktion durchzuführen:"Zugang zum Modul"</locale>
+  </entity>
+</localization>

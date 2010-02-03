@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <entity id="document-name">
+    <locale lang="fr">liste éditable</locale>
+    <locale lang="en">editable list</locale>
+    <locale lang="de">bearbeitbare Liste</locale>
+  </entity>
+  <entity id="label">
+    <locale lang="fr">libellé</locale>
+    <locale lang="en">label</locale>
+    <locale lang="de">Name</locale>
+  </entity>
+  <entity id="listid">
+    <locale lang="fr">identifiant de la liste</locale>
+    <locale lang="en">list identifier</locale>
+    <locale lang="de">Benutzername der Liste</locale>
+  </entity>
+  <entity id="listid-help">
+    <locale lang="fr">ce nom doit être unique afin d'identifier cette liste sans ambiguïté</locale>
+    <locale lang="en">this name must be unique in order to identify the list</locale>
+    <locale lang="de">dieser Name muss einzigartig sein, um die Liste ohne Zweifel identifizieren zu können </locale>
+  </entity>
+  <entity id="itemdocuments">
+    <locale lang="fr">composants de la liste</locale>
+    <locale lang="en">list items</locale>
+    <locale lang="de">Bestandteile der Liste</locale>
+  </entity>
+  <entity id="itemdocuments-help">
+    <locale lang="fr">Affiche la liste des éléments présents dans la liste. Permet également des les ré-ordonner.</locale>
+    <locale lang="de">Liste der Elemente anzeigen aus der die Liste besteht. Ermöglicht ausserdem sie zu ordnen.</locale>
+  </entity>
+  <entity id="description">
+    <locale lang="fr">description</locale>
+    <locale lang="de">Beschreibung</locale>
+  </entity>
+  <entity id="order">
+    <locale lang="fr">tri alphanumérique</locale>
+    <locale lang="en">alphanumeric sort</locale>
+    <locale lang="de">alfanumerische Sortierung</locale>
+  </entity>
+  <entity id="order-help">
+    <locale lang="fr">Indique si la liste doit être affichée suivant un order alpha-numéric ou non.</locale>
+    <locale lang="de">Zeigt an, ob die Liste in alfanumerischer Ordnung angezeigt werden soll, oder nicht.</locale>
+  </entity>
+</localization>
