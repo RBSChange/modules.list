@@ -24,7 +24,7 @@ class list_persistentdocument_valuededitablelist extends list_persistentdocument
 		try 
 		{
 			$item = list_ValueditemService::getInstance()->createQuery()
-				->add(Restrictions::eq('list.id', $this->getId()))
+				->add(Restrictions::eq('valuededitablelist', $this))
 				->add(Restrictions::eq('value', $value))
 				->findUnique();
 			return $this->buildListItem($item);
