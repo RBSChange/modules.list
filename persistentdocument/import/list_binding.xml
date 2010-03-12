@@ -10,7 +10,8 @@
 
 	<binding name="staticlist" className="list_StaticlistScriptDocumentElement" />
 	<binding name="staticitem" className="list_StaticitemElement" />
-
+	<binding name="staticlistupdate" className="list_StaticlistUpdateScriptDocumentElement" />
+	
 	<binding name="dynamiclist" className="list_DynamiclistScriptDocumentElement" />
 
 	<binding name="list" className="list_ListScriptDocumentElement" />
