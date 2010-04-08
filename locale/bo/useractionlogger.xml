@@ -132,4 +132,16 @@
 	<entity id="log-move-folder">
 		<locale lang="fr">log-move-folder</locale>
 	</entity>
-<entity id="update-staticlist"><locale lang="fr">update.staticlist {documentlabel}</locale></entity><entity id="log-update-staticlist"><locale lang="fr">log-update-staticlist</locale></entity><entity id="update-dynamiclist"><locale lang="fr">update.dynamiclist {documentlabel}</locale></entity><entity id="log-update-dynamiclist"><locale lang="fr">log-update-dynamiclist</locale></entity></localization>
+	<entity id="update-staticlist">
+		<locale lang="fr">update.staticlist {documentlabel}</locale>
+	</entity>
+	<entity id="log-update-staticlist">
+		<locale lang="fr">log-update-staticlist</locale>
+	</entity>
+	<entity id="update-dynamiclist">
+		<locale lang="fr">update.dynamiclist {documentlabel}</locale>
+	</entity>
+	<entity id="log-update-dynamiclist">
+		<locale lang="fr">log-update-dynamiclist</locale>
+	</entity>
+</localization>

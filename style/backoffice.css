@@ -1,18 +1,21 @@
 treechildren::-moz-tree-image(modules_list_staticlist){
-	list-style-image: url(/icons/small/static-list.png) ;
+	list-style-image: url(/changeicons/small/static-list.png) ;
 }
 treechildren::-moz-tree-image(modules_list_dynamiclist){
-	list-style-image: url(/icons/small/dynamic-list.png) ;
+	list-style-image: url(/changeicons/small/dynamic-list.png) ;
 }
 treechildren::-moz-tree-image(modules_list_editablelist){
-	list-style-image: url(/icons/small/editable-list.png) ;
+	list-style-image: url(/changeicons/small/editable-list.png) ;
 }
 treechildren::-moz-tree-image(modules_list_item){
-	list-style-image: url(/icons/small/list-item.png) ;
+	list-style-image: url(/changeicons/small/list-item.png) ;
 }
 treechildren::-moz-tree-image(modules_list_valueditem){
-	list-style-image: url(/icons/small/valued-list-item.png) ;
+	list-style-image: url(/changeicons/small/valued-list-item.png) ;
 }
 treechildren::-moz-tree-image(modules_list_valuededitablelist){
-	list-style-image: url(/icons/small/valued-editable-list.png) ;
+	list-style-image: url(/changeicons/small/valued-editable-list.png) ;
+}
+treechildren::-moz-tree-image(modules_list_list){
+	list-style-image: url(/changeicons/small/document.png);
 }
