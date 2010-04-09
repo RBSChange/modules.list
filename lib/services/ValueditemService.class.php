@@ -40,8 +40,9 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see persistentdocument/f_persistentdocument_DocumentService#getResume($document, $forModuleName, $allowedSections)
+	 * @param string $forModuleName
+	 * @param array $allowedSections
+	 * @return array
 	 */
 	public function getResume($document, $forModuleName, $allowedSections = null)
 	{
