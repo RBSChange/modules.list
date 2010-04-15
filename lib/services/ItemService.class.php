@@ -59,7 +59,7 @@ class list_ItemService extends f_persistentdocument_DocumentService
 			->add(Restrictions::ieq("itemdocuments.label", $document->getLabel()))->findUnique();
 		if ($list !== null)
 		{
-			throw new Exception("Duplicate ".$document->getLabel()." list entry");
+			throw new BaseException("Duplicate ".$document->getLabel()." list entry", "modules.list.bo.general.Error-duplicate-list-entry", array('label' => $document->getLabel()));
 		}
 	}
 	
@@ -77,7 +77,7 @@ class list_ItemService extends f_persistentdocument_DocumentService
 		$list = $query->findUnique();
 		if ($list !== null)
 		{
-			throw new Exception("Duplicate ".$document->getLabel()." list entry");
+			throw new BaseException("Duplicate ".$document->getLabel()." list entry", "modules.list.bo.general.Error-duplicate-list-entry", array('label' => $document->getLabel()));
 		}
 	}
 	

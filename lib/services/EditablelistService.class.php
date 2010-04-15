@@ -5,7 +5,6 @@
  */
 class list_EditablelistService extends list_ListService
 {
-	
 	/**
 	 * @var list_EditablelistService
 	 */

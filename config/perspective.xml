@@ -78,6 +78,8 @@
 				<contextaction name="edit" />
 				<contextaction name="delete" />
 				<contextaction name="createItem" />
+				<contextaction name="importItems" />
+				<contextaction name="exportItems" />
 			</contextactions>
 		</model>		
 		<model name="modules_list/item">
@@ -90,10 +92,15 @@
 			<children>
 				<child model="modules_list/valueditem" from="itemdocuments" />
 			</children>
+			<columns>
+				<column name="value" flex="1"/>
+			</columns>
 			<contextactions>
 				<contextaction name="edit" />
 				<contextaction name="delete" />
 				<contextaction name="createValueditem" />
+				<contextaction name="importItems" />
+				<contextaction name="exportItems" />
 			</contextactions>
 		</model>
 		<model name="modules_list/valueditem">
@@ -105,11 +112,13 @@
 		<model name="modules_list/staticlist">
 			<contextactions>
 				<contextaction name="edit" />
+				<contextaction name="exportItems" />
 			</contextactions>
 		</model>
 		<model name="modules_list/dynamiclist">
 			<contextactions>
 				<contextaction name="edit" />
+				<contextaction name="exportItems" />
 			</contextactions>
 		</model>
 	</models>	
@@ -127,6 +136,8 @@
 		<action name="createEditablelist" single="true" permission="Insert_editablelist" group="create_" icon="add" label="&amp;modules.list.bo.actions.Create-editablelist;" />
 		<action name="createValuededitablelist" single="true" permission="Insert_valuededitablelist" group="create_" icon="add" label="&amp;modules.list.bo.actions.Create-Valuededitablelist;" />
 		<action name="createItem" single="true" permission="Insert_item" icon="add" label="&amp;modules.list.bo.actions.Create-item;" />
+		<action name="exportItems" single="true" permission="Load" icon="download" label="&amp;modules.list.bo.actions.Export-items;" />
+		<action name="importItems" single="true" permission="Insert_item" icon="upload" label="&amp;modules.list.bo.actions.Import-items;" />
 		<action name="createValueditem" single="true" permission="Insert_valueditem" icon="add" label="&amp;modules.list.bo.actions.Create-Valueditem;" />
 		<action name="createFolder" single="true" permission="Insert_folder" group="create_" icon="create-folder" label="&amp;modules.uixul.bo.actions.Create-folder;" />
 		<action name="move" permission="Move" icon="up_down" label="&amp;modules.uixul.bo.actions.Move;" />

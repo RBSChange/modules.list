@@ -19,3 +19,10 @@ treechildren::-moz-tree-image(modules_list_valuededitablelist){
 treechildren::-moz-tree-image(modules_list_list){
 	list-style-image: url(/changeicons/small/document.png);
 }
+treechildren::-moz-tree-image(modules_list_list){
+	list-style-image: url(/changeicons/small/document.png);
+}
+
+wdialog[template="ImportItems"] .dialog-header{
+	background: url(/changeicons/small/upload.png) transparent center  left no-repeat!important;
+}

@@ -62,7 +62,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 			->add(Restrictions::ieq("itemdocuments.label", $document->getLabel()))->findUnique();
 		if ($list !== null)
 		{
-			throw new Exception("Duplicate ".$document->getLabel()." list entry");
+			throw new BaseException("Duplicate ".$document->getLabel()." list entry", "modules.list.bo.general.Error-duplicate-list-entry", array('label' => $document->getLabel()));
 		}
 		
 		$list = list_ValuededitablelistService::getInstance()->createQuery()
@@ -70,7 +70,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 			->add(Restrictions::eq("itemdocuments.value", $document->getValue()))->findUnique();
 		if ($list !== null)
 		{
-			throw new Exception("Duplicate ".$document->getValue()." list value entry");
+			throw new BaseException("Duplicate ".$document->getValue()." list value entry", "modules.list.bo.general.Error-duplicate-list-value-entry", array('value' => $document->getValue()));
 		}
 	}
 	
@@ -89,7 +89,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 		$list = $query->findUnique();
 		if ($list !== null)
 		{
-			throw new Exception("Duplicate ".$document->getLabel()." list entry");
+			throw new BaseException("Duplicate ".$document->getLabel()." list entry", "modules.list.bo.general.Error-duplicate-list-entry", array('label' => $document->getLabel()));
 		}
 		
 		$query = list_ValuededitablelistService::getInstance()->createQuery()->add(Restrictions::eq("id", $listDocument->getId()));
@@ -99,7 +99,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 		$list = $query->findUnique();
 		if ($list !== null)
 		{
-			throw new Exception("Duplicate ".$document->getValue()." list value entry");
+			throw new BaseException("Duplicate ".$document->getValue()." list value entry", "modules.list.bo.general.Error-duplicate-list-value-entry", array('value' => $document->getValue()));
 		}
 	}
 }

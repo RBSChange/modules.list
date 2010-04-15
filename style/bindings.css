@@ -1,0 +1,4 @@
+wdialog[template="ImportItems"]
+{
+	-moz-binding: url(binding:modules.list.importItemsDialog#importItemsDialog);
+}

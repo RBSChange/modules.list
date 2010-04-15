@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <localization>
-  <entity id="module-name">
-    <locale lang="fr">listes</locale>
-    <locale lang="en">lists</locale>
-    <locale lang="de">Listen</locale>
-  </entity>
-  <entity id="tree-root-name">
-    <locale lang="fr">listes</locale>
-    <locale lang="en">lists</locale>
-    <locale lang="de">Listen</locale>
-  </entity>
-  <entity id="system-folder-name">
-    <locale lang="fr">listes</locale>
-    <locale lang="en">lists</locale>
-    <locale lang="de">Listen</locale>
-  </entity>
-  <entity id="column.nbitems">
-    <locale lang="fr">élements</locale>
-    <locale lang="en">items</locale>
-  </entity>
-  <entity id="column.listid">
-    <locale lang="fr">Code de la liste</locale>
-  </entity>
+	<entity id="module-name">
+		<locale lang="fr">listes</locale>
+		<locale lang="en">lists</locale>
+		<locale lang="de">Listen</locale>
+	</entity>
+	<entity id="tree-root-name">
+		<locale lang="fr">listes</locale>
+		<locale lang="en">lists</locale>
+		<locale lang="de">Listen</locale>
+	</entity>
+	<entity id="system-folder-name">
+		<locale lang="fr">listes</locale>
+		<locale lang="en">lists</locale>
+		<locale lang="de">Listen</locale>
+	</entity>
+	<entity id="column.nbitems">
+		<locale lang="fr">élements</locale>
+		<locale lang="en">items</locale>
+	</entity>
+	<entity id="column.listid">
+		<locale lang="fr">code de la liste</locale>
+	</entity>
+	<entity id="column.value">
+		<locale lang="fr">valeur</locale>
+	</entity>
+	<entity id="confirm-export-items-message">
+		<locale lang="fr">êtes-vous sûr de vouloir exporter les éléments de cette liste en CSV ?</locale>
+	</entity>
+	<entity id="item-label">
+		<locale lang="fr">libellé</locale>
+		<locale lang="en">label</locale>
+	</entity>
+	<entity id="item-value">
+		<locale lang="fr">valeur</locale>
+		<locale lang="en">value</locale>
+	</entity>
+	<entity id="import-items-title">
+		<locale lang="fr">importer des éléments de liste</locale>
+		<locale lang="en">import list items</locale>
+	</entity>
+	<entity id="import-import">
+		<locale lang="fr">lancer l'importation</locale>
+		<locale lang="en">launch import</locale>
+	</entity>
+	<entity id="importing">
+		<locale lang="fr">importation en cours</locale>
+		<locale lang="en">importing</locale>
+	</entity>
+	<entity id="import-file">
+		<locale lang="fr">fichier d'import</locale>
+		<locale lang="en">import file</locale>
+	</entity>
+	<entity id="items-imported">
+		<locale lang="fr">éléments importés</locale>
+		<locale lang="en">items imported</locale>
+	</entity>
+	<entity id="items-imported">
+		<locale lang="fr">éléments importés avec des erreurs</locale>
+		<locale lang="en">items imported with warnings</locale>
+	</entity>
+	<entity id="import-mode">
+		<locale lang="fr">mode d'import</locale>
+		<locale lang="en">import mode</locale>
+	</entity>
+	<entity id="replace">
+		<locale lang="fr">rempalcer tous les éléments</locale>
+		<locale lang="en">replace all elements</locale>
+	</entity>
+	<entity id="complete">
+		<locale lang="fr">compléter avec les éléments manquants</locale>
+		<locale lang="en">complete with missing elements</locale>
+	</entity>
+	<entity id="error-importing-list">
+		<locale lang="fr">aucun élément n'a été modifié car une erreur s'est produite lors de l'importation : {exception}</locale>
+	</entity>
+	<entity id="error-duplicate-list-entry">
+		<locale lang="fr">il y a déjà un élément avec le libellé "{label}" dans cette liste.</locale>
+	</entity>
+	<entity id="error-duplicate-list-value-entry">
+		<locale lang="fr">il y a déjà un élément avec la valeur "{value}" dans cette liste.</locale>
+	</entity>
 </localization>
