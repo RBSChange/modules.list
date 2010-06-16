@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <panel>
 	<section labeli18n="modules.uixul.bo.doceditor.fieldsgroup.Title">
-		<field name="label"/>
-		<field name="description"/>
-		<field name="itemdocuments"/>
-		<field name="order"/>
-	</section>	
-	
-	<section labeli18n="modules.list.bo.doceditor.newitem.Title"> 
-		<field name="newItemLabel" type="text" labeli18n="modules.list.bo.doceditor.newitem.FieldLab"/>
-		<field name="newItemValue" type="text" labeli18n="modules.list.bo.doceditor.newitem.FieldVal" size="5"/>
-	</section>		
+		<field name="label" hidehelp="true" />
+		<field name="description" hidehelp="true" />
+		<field name="useVoIfNotTranslated" />
+		<field name="itemdocuments" />
+		<field name="order" />
+	</section>
+	<section labeli18n="modules.list.bo.doceditor.newitem.Title">
+		<field name="newItemLabel" type="text" labeli18n="modules.list.bo.doceditor.newitem.FieldLab" />
+		<field name="newItemValue" type="text" labeli18n="modules.list.bo.doceditor.newitem.FieldVal" size="5" />
+	</section>
 </panel>

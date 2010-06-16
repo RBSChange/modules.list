@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/1.0.xsd"
-	model-version="1.0" icon="editable-list" publish-on-day-change="false" backoffice-indexable="true"
-	extend="modules_list/list">
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/1.0.xsd" model-version="1.0"
+	icon="editable-list" publish-on-day-change="false" backoffice-indexable="true" extend="modules_list/list">
 	<properties>
-		<add name="itemdocuments" type="modules_list/item" min-occurs="0" max-occurs="-1" tree-node="true" inverse="true" />
+		<add name="itemdocuments" type="modules_list/item" max-occurs="-1" tree-node="true" inverse="true" />
 		<!--  TODO: should be named orderbylabel -->
-		<add name="order" type="Boolean" min-occurs="0" max-occurs="1" default-value="true" />
+		<add name="order" type="Boolean" default-value="true" />
+		<add name="useVoIfNotTranslated" type="Boolean" default-value="true" />
 	</properties>
 </document>

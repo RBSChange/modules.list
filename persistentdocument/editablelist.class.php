@@ -22,6 +22,18 @@ class list_persistentdocument_editablelist extends list_persistentdocument_edita
 		// Foreach item create an object list_Item
 		foreach ($itemdocuments as $item)
 		{
+			if ($item->isContextLangAvailable())
+			{
+				if (!$item->isPublished())
+				{
+					continue;
+				}
+			}
+			else if (!$this->getUseVoIfNotTranslated() || $item->getVoPublicationstatus() != 'PUBLICATED')
+			{
+				continue;
+			}
+			
 			$tmp = $this->buildListItem($item);
 			$listOfItems[f_util_StringUtils::strip_accents($tmp->getLabel())] = $tmp;
 		}
@@ -65,8 +77,7 @@ class list_persistentdocument_editablelist extends list_persistentdocument_edita
 	 */
 	protected function buildListItem($item)
 	{
-		$isContextLangAvailable = $item->isContextLangAvailable();
-		$label = $isContextLangAvailable ? $item->getLabel() : $item->getVoLabel();
+		$label = $item->isContextLangAvailable() ? $item->getLabel() : $item->getVoLabel();
 		return new list_Item($label, $item->getId());
 	}
 	
