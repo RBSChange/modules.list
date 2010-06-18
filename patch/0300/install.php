@@ -10,11 +10,21 @@ class list_patch_0300 extends patch_BasePatch
 	 */
 	public function execute()
 	{
-		/*$newPath = f_util_FileUtils::buildWebeditPath('modules/list/persistentdocument/editablelist.xml');
-		$newModel = generator_PersistentModel::loadModelFromString(f_util_FileUtils::read($newPath), 'list', 'editablelist');
-		$newProp = $newModel->getPropertyByName('useVoIfNotTranslated');
-		f_persistentdocument_PersistentProvider::getInstance()->addProperty('list', 'editablelist', $newProp);*/
-	
+		try 
+		{
+			$newPath = f_util_FileUtils::buildWebeditPath('modules/list/persistentdocument/editablelist.xml');
+			$newModel = generator_PersistentModel::loadModelFromString(f_util_FileUtils::read($newPath), 'list', 'editablelist');
+			$newProp = $newModel->getPropertyByName('useVoIfNotTranslated');
+			f_persistentdocument_PersistentProvider::getInstance()->addProperty('list', 'editablelist', $newProp);
+		} 
+		catch (BaseException $e)
+		{
+			if ($e->getAttribute('sqlstate') != '42S21' || $e->getAttribute('errorcode') != '1060')
+			{
+				throw $e;
+			}
+		}
+			
 		foreach (list_EditablelistService::getInstance()->createQuery()->find() as $list)
 		{
 			$list->setUseVoIfNotTranslated(true);
