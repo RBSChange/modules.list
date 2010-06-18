@@ -27,7 +27,10 @@ class list_persistentdocument_valuededitablelist extends list_persistentdocument
 				->add(Restrictions::eq('valuededitablelist', $this))
 				->add(Restrictions::eq('value', $value))
 				->findUnique();
-			return $this->buildListItem($item);
+			if ($item !== null)
+			{
+				return $this->buildListItem($item);
+			}
 		} 
 		catch (Exception $e)
 		{
