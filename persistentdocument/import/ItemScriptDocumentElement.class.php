@@ -41,4 +41,29 @@ class list_ItemScriptDocumentElement extends import_ScriptDocumentElement
 	{
 		return f_persistentdocument_PersistentDocumentModel::getInstanceFromDocumentModelName('modules_list/item');
 	}
+	
+	/**
+	 * @param String $label
+	 * @param String $type
+	 * @return f_persistentdocument_PersistentDocument
+	 */
+	protected function getChildDocumentByProperty($propName, $propValue, $type)
+	{
+		$persistentProvider = f_persistentdocument_PersistentProvider::getInstance();
+		$query = $persistentProvider->createQuery($type)->add(Restrictions::eq($propName, $propValue));
+		
+		$parentDoc = $this->getParentDocument()->getPersistentDocument();
+		if ($parentDoc !== null)
+		{
+			$query->add(Restrictions::eq('editablelist', $parentDoc));
+		}
+		
+		$documents = $query->find();
+		if (count($documents) > 0)
+		{
+			// FIXME: what if multiple documents ? Shouldn't we throw something ?
+			return $documents[0];
+		}
+		return null;
+	}
 }
