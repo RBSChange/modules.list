@@ -10,17 +10,14 @@ class list_ValuededitablelistScriptDocumentElement extends import_ScriptDocument
 	 */
 	protected function initPersistentDocument()
 	{
-		$listid = strtolower($this->attributes['listid']);
-		try
+		$list = list_ListService::getInstance()->getByListId($this->attributes['listid']);
+		if ($list === null)
 		{
-			return list_ListService::getInstance()->getDocumentInstanceByListId($listid);
+			$list = list_DynamiclistService::getInstance()->getNewDocumentInstance();
 		}
-		catch (Exception $e)
-		{
-			return list_ValuededitablelistService::getInstance()->getNewDocumentInstance();
-		}
+		return $list;
 	}
-
+	
 	/**
 	 * @return array<String, String>
 	 */
@@ -35,7 +32,7 @@ class list_ValuededitablelistScriptDocumentElement extends import_ScriptDocument
 		$attrs['listid'] = strtolower($attrs['listid']);
 		return $attrs;
 	}
-
+	
 	public function endProcess()
 	{
 		$children = $this->script->getChildren($this);
@@ -56,7 +53,7 @@ class list_ValuededitablelistScriptDocumentElement extends import_ScriptDocument
 			$list->save();
 		}
 	}
-
+	
 	/**
 	 * Check if an item labeled $label is in the list
 	 * @param String $label

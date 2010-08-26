@@ -1,7 +1,6 @@
 <?php
 class list_GetListItemsAction extends f_action_BaseJSONAction
 {
-
     /**
      * @param Context $context
      * @param Request $request
@@ -51,7 +50,6 @@ class list_GetListItemsAction extends f_action_BaseJSONAction
 
 		return $this->sendJSON($result);
 	}
-
 
 	public function getRequestMethods()
 	{

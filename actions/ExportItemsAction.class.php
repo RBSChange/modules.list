@@ -2,7 +2,7 @@
 /**
  * @package modules.list
  */
-class list_ExportItemsAction extends users_ActionBase
+class list_ExportItemsAction extends f_action_BaseAction
 {	
 	/**
 	 * @param Context $context

@@ -5,7 +5,6 @@
  */
 class list_GetItemsSuccessView extends f_view_BaseView
 {
-	
 	public function _execute($context, $request)
 	{
 		$this->sendHttpHeaders();
@@ -52,6 +51,5 @@ class list_GetItemsSuccessView extends f_view_BaseView
 		$this->setAttribute('id', $request->getAttribute('listid'));
 		$this->setAttribute('lang', $lang);
 		$this->setAttribute('contents', join(K::CRLF, $contents));
-	
 	}
 }

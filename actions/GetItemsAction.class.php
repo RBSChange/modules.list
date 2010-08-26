@@ -1,7 +1,6 @@
 <?php
-class list_GetItemsAction extends list_ActionBase
+class list_GetItemsAction extends f_action_BaseAction
 {
-
     /**
      * @param Context $context
      * @param Request $request

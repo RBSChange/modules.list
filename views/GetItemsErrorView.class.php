@@ -5,7 +5,6 @@
  */
 class list_GetItemsErrorView extends f_view_BaseView
 {
-	
 	public function _execute($context, $request)
 	{
 		$this->sendHttpHeaders();

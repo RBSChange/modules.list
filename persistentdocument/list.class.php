@@ -74,7 +74,8 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	    } 
 	    catch (Exception $e)
 	    {
-	        $nodeAttributes['nbitems'] = '-';
+	        Framework::exception($e);
+	    	$nodeAttributes['nbitems'] = '-';
 	    }
 	}
 	

@@ -10,15 +10,12 @@ class list_EditablelistScriptDocumentElement extends import_ScriptDocumentElemen
 	 */
 	protected function initPersistentDocument()
 	{
-		$listid = $this->attributes['listid'];
-		try
+		$list = list_ListService::getInstance()->getByListId($this->attributes['listid']);
+		if ($list === null)
 		{
-			return list_ListService::getInstance()->getDocumentInstanceByListId($listid);
+			$list = list_DynamiclistService::getInstance()->getNewDocumentInstance();
 		}
-		catch (Exception $e)
-		{
-			return list_EditablelistService::getInstance()->getNewDocumentInstance();
-		}
+		return $list;
 	}
 	
 	public function endProcess()
