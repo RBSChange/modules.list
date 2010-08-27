@@ -13,7 +13,7 @@ class list_EditablelistScriptDocumentElement extends import_ScriptDocumentElemen
 		$list = list_ListService::getInstance()->getByListId($this->attributes['listid']);
 		if ($list === null)
 		{
-			$list = list_DynamiclistService::getInstance()->getNewDocumentInstance();
+			$list = list_EditablelistService::getInstance()->getNewDocumentInstance();
 		}
 		return $list;
 	}

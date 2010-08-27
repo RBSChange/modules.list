@@ -13,7 +13,7 @@ class list_StaticlistScriptDocumentElement extends import_ScriptDocumentElement
 		$list = list_ListService::getInstance()->getByListId($this->attributes['listid']);
 		if ($list === null)
 		{
-			$list = list_DynamiclistService::getInstance()->getNewDocumentInstance();
+			$list = list_StaticlistService::getInstance()->getNewDocumentInstance();
 		}
 		return $list;
 	}
