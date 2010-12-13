@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.bo.general" lcid="en_GB">
+  <key id="module-name">lists</key>
+  <key id="tree-root-name">lists</key>
+  <key id="system-folder-name">lists</key>
+  <key id="item-label">label</key>
+  <key id="item-value">value</key>
+  <key id="import-items-title">import list items</key>
+  <key id="import-import">launch import</key>
+  <key id="importing">importing</key>
+  <key id="import-file">import file</key>
+  <key id="items-imported">items imported</key>
+  <key id="import-mode">import mode</key>
+  <key id="replace">replace all elements</key>
+  <key id="complete">complete with missing elements</key>
+</i18n>

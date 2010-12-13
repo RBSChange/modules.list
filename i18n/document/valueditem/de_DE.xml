@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.document.valueditem" lcid="de_DE">
+  <key id="document-name">bewerteter Listenitem</key>
+  <key id="label">Name</key>
+  <key id="label-help">angezeigter Name des Items.</key>
+  <key id="value">Wert</key>
+  <key id="value-help">Echtwert des items.</key>
+</i18n>

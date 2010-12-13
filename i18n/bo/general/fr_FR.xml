@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.bo.general" lcid="fr_FR">
+  <key id="module-name">listes</key>
+  <key id="tree-root-name">listes</key>
+  <key id="system-folder-name">listes</key>
+  <key id="confirm-export-items-message">êtes-vous sûr de vouloir exporter les éléments de cette liste en CSV ?</key>
+  <key id="item-label">libellé</key>
+  <key id="item-value">valeur</key>
+  <key id="import-items-title">importer des éléments de liste</key>
+  <key id="import-import">lancer l'importation</key>
+  <key id="importing">importation en cours</key>
+  <key id="import-file">fichier d'import</key>
+  <key id="items-imported">éléments importés</key>
+  <key id="import-mode">mode d'import</key>
+  <key id="replace">rempalcer tous les éléments</key>
+  <key id="complete">compléter avec les éléments manquants</key>
+  <key id="error-importing-list">aucun élément n'a été modifié car une erreur s'est produite lors de l'importation : {exception}</key>
+  <key id="error-duplicate-list-entry">il y a déjà un élément avec le libellé ″{label}″ dans cette liste.</key>
+  <key id="error-duplicate-list-value-entry">il y a déjà un élément avec la valeur ″{value}″ dans cette liste.</key>
+</i18n>

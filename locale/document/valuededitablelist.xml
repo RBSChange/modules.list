@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization extend="modules.list.document.editablelist">
-	<entity id="document-name">
-		<locale lang="fr">liste clé / valeur</locale>
-		<locale lang="en">editable value list</locale>
-		<locale lang="de">Schlüsselliste / Wert</locale>
-	</entity>
-</localization>

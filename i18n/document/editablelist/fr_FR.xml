@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.document.editablelist" lcid="fr_FR">
+  <key id="document-name">liste éditable</key>
+  <key id="label">libellé</key>
+  <key id="listid">identifiant de la liste</key>
+  <key id="listid-help">ce nom doit être unique afin d'identifier cette liste sans ambiguïté</key>
+  <key id="itemdocuments">composants de la liste</key>
+  <key id="itemdocuments-help">Affiche la liste des éléments présents dans la liste. Permet également des les ré-ordonner.</key>
+  <key id="description">description</key>
+  <key id="order">tri alphanumérique</key>
+  <key id="order-help">Indique si la liste doit être affichée suivant un order alpha-numéric ou non.</key>
+  <key id="usevoifnottranslated">utiliser la VO si non-traduit</key>
+  <key id="usevoifnottranslated-help">Permet de choisir si lorsqu'un élément de cette liste n'est pas traduit on utilise sa version originale ou si l'on ignore l'élément.</key>
+</i18n>

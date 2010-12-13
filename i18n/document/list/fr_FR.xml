@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.document.list" lcid="fr_FR">
+  <key id="document-name">liste</key>
+  <key id="label">libellé</key>
+  <key id="listid">identifiant de la liste</key>
+  <key id="listid-help">ce nom doit être unique afin d'identifier cette liste sans ambiguïté</key>
+  <key id="item">composants de la liste</key>
+  <key id="description">description</key>
+</i18n>

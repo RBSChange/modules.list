@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.bo.actions" lcid="de_DE">
+  <key id="create_">Neu</key>
+  <key id="create-editablelist">eine Liste erstellen</key>
+  <key id="create-item">einen Listenwert erstellen</key>
+  <key id="create-valuededitablelist">einen Schlüsselwert für die Liste</key>
+  <key id="create-valueditem">einen Listenwert erstellen</key>
+</i18n>

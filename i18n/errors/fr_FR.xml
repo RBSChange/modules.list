@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.errors" lcid="fr_FR">
+  <key id="modules-list-getpreferencesdocument">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Ouvrir les préférences″</key>
+  <key id="modules-list-order">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Modifier l'ordre des éléments″</key>
+  <key id="modules-list-enabled">vous n'avez pas les permissions suffisantes pour effectuer l'action suivante : ″Accès au module″</key>
+</i18n>

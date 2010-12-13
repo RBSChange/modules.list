@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.bo.help" lcid="de_DE">
+  <key id="list-unique-id-help">dieser Name muss einzigartig sein, um diese Liste ohne Zweifel identifizieren zu können</key>
+</i18n>

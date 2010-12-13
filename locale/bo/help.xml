@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization>
-  <entity id="list-unique-id-help">
-    <locale lang="fr">ce nom doit être unique afin d'identifier cette liste sans ambiguïté</locale>
-    <locale lang="en">this name must be unique in order to identify the list</locale>
-    <locale lang="de">dieser Name muss einzigartig sein, um diese Liste ohne Zweifel identifizieren zu können</locale>
-  </entity>
-</localization>
