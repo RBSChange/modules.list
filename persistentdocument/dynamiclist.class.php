@@ -12,10 +12,6 @@ class list_persistentdocument_dynamiclist extends list_persistentdocument_dynami
 	public function getItems()
 	{
 		$listService = $this->getListService();
-		if (f_util_ClassUtils::methodExists($listService, 'setParameters'))
-		{
-			$listService->setParameters($this->parameters);
-		}
 		return $listService->getItems();
 	}
 	
@@ -49,7 +45,15 @@ class list_persistentdocument_dynamiclist extends list_persistentdocument_dynami
 		$className = $moduleName . '_List' . ucfirst($listId) . 'Service';
 		
 		// Get instance of class
-		return f_util_ClassUtils::callMethod($className, 'getInstance');
+		$listService = f_util_ClassUtils::callMethod($className, 'getInstance');
+		
+		// Set the parameters if possible.
+		if (f_util_ClassUtils::methodExists($listService, 'setParameters'))
+		{
+			$listService->setParameters($this->parameters);
+		}
+
+		return $listService;
 	}
 	
 	/**
