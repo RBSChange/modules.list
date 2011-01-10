@@ -59,11 +59,11 @@ class list_ValuededitablelistScriptDocumentElement extends import_ScriptDocument
 	 * @param String $label
 	 * @return Boolean true if label was founded
 	 */
-	public function checkLabel($label)
+	public function checkLabel($label, $srcDocument = null)
 	{
 		foreach ($this->getPersistentDocument()->getItemdocumentsArray() as $document)
 		{
-			if ($document->getLabel() == $label)
+			if ($document->getLabel() == $label && ($srcDocument === null || $document->getId() != $srcDocument->getId()))
 			{
 				return true;
 			}

@@ -25,9 +25,9 @@
 
 			<valuededitablelist listid="modules_list/samplezipcode"
 				description="Liste des codes postaux" label="Liste des codes postaux">
-				<valueditem label="01 - Ain" value="01" />
-				<valueditem label="02 - Aisne" value="02" />
-				<valueditem label="03 - Allier" value="03" />
+				<valueditem label="01 - Ain" byValue="01" />
+				<valueditem label="02 - Aisne" byValue="02" />
+				<valueditem label="03 - Allier" byValue="03" />
 			</valuededitablelist>
 		</folder>
 	</rootfolder>
