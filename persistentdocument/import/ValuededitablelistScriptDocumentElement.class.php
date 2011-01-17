@@ -53,21 +53,4 @@ class list_ValuededitablelistScriptDocumentElement extends import_ScriptDocument
 			$list->save();
 		}
 	}
-	
-	/**
-	 * Check if an item labeled $label is in the list
-	 * @param String $label
-	 * @return Boolean true if label was founded
-	 */
-	public function checkLabel($label)
-	{
-		foreach ($this->getPersistentDocument()->getItemdocumentsArray() as $document)
-		{
-			if ($document->getLabel() == $label)
-			{
-				return true;
-			}
-		}
-		return false;
-	}
 }

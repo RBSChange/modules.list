@@ -38,21 +38,4 @@ class list_EditablelistScriptDocumentElement extends import_ScriptDocumentElemen
 			$list->save();
 		}
 	}
-	
-	/**
-	 * Check if an item labeled $label is in the list
-	 * @param String $label
-	 * @return Boolean true if label was found
-	 */
-	public function checkLabel($label)
-	{
-		foreach ($this->getPersistentDocument()->getItemdocumentsArray() as $document)
-		{
-			if ($document->getLabel() == $label)
-			{
-				return true;
-			}
-		}
-		return false;
-	}
 }

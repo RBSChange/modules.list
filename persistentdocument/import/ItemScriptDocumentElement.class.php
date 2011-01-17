@@ -22,19 +22,6 @@ class list_ItemScriptDocumentElement extends import_ScriptDocumentElement
 	}
 	
 	/**
-	 * @return void
-	 */
-	protected function saveDocument()
-	{
-		$list = $this->getParentDocument();
-		$document = $this->getPersistentDocument();
-		if (!$list || !$list->checkLabel($document->getLabel()))
-		{
-			parent::saveDocument();
-		}
-	}
-	
-	/**
 	 * @return f_persistentdocument_PersistentDocumentModel
 	 */
 	protected function getDocumentModel()
@@ -49,6 +36,7 @@ class list_ItemScriptDocumentElement extends import_ScriptDocumentElement
 	 */
 	protected function getChildDocumentByProperty($propName, $propValue, $type)
 	{
+		
 		$persistentProvider = f_persistentdocument_PersistentProvider::getInstance();
 		$query = $persistentProvider->createQuery($type)->add(Restrictions::eq($propName, $propValue));
 		
