@@ -3,7 +3,7 @@
  * <{$class}>
  * @package modules.<{$module}>.lib.services
  */
-class <{$class}> extends BaseService
+class <{$class}> extends BaseService implements list_ListItemsService
 {
 	/**
 	 * @var <{$class}>
