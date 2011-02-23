@@ -5,10 +5,7 @@
  */
 class list_persistentdocument_list extends list_persistentdocument_listbase
 {
-	
 	/**
-	 * @see f_persistentdocument_PersistentDocumentImpl::getLabel()
-	 *
 	 * @return String
 	 */
 	public function getLabel()
@@ -22,8 +19,6 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	}
 	
 	/**
-	 * @see list_persistentdocument_listbase::getDescription()
-	 *
 	 * @return String
 	 */
 	public function getDescription()
@@ -35,6 +30,7 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 		}
 		return $description;
 	}
+	
     /**
      * @return list_Item[]
      */
@@ -57,26 +53,6 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	public function canBeDeleted()
 	{
 		return f_util_StringUtils::beginsWith($this->getListid(), 'modules_webapp/usr');
-	}
-	
-	/**
-	 * @param string $moduleName
-	 * @param string $treeType
-	 * @param array<string, string> $nodeAttributes
-	 */	
-	protected function addTreeAttributes($moduleName, $treeType, &$nodeAttributes)
-	{
-	    $nodeAttributes['listid'] = $this->getListid();
-	    $nodeAttributes['canBeDeleted'] = ($this->canBeDeleted() ? 'true' : 'false');
-	    try 
-	    {
-	        $nodeAttributes['nbitems'] = $this->countItems();
-	    } 
-	    catch (Exception $e)
-	    {
-	        Framework::exception($e);
-	    	$nodeAttributes['nbitems'] = '-';
-	    }
 	}
 	
 	/**

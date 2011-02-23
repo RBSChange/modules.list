@@ -92,4 +92,25 @@ class list_ListService extends f_persistentdocument_DocumentService
 	     }
 	     return false;
 	}
+	
+	/**
+	 * @param list_persistentdocument_list $document
+	 * @param string $moduleName
+	 * @param string $treeType
+	 * @param array<string, string> $nodeAttributes
+	 */	
+	public function addTreeAttributes($document, $moduleName, $treeType, &$nodeAttributes)
+	{
+	    $nodeAttributes['listid'] = $document->getListid();
+	    $nodeAttributes['canBeDeleted'] = ($document->canBeDeleted() ? 'true' : 'false');
+	    try 
+	    {
+	        $nodeAttributes['nbitems'] = $document->countItems();
+	    } 
+	    catch (Exception $e)
+	    {
+	        Framework::exception($e);
+	    	$nodeAttributes['nbitems'] = '-';
+	    }
+	}
 }
