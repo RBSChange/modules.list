@@ -108,12 +108,12 @@ class commands_list_AddDynamicList extends commands_AbstractChangeCommand
 		$this->message('Service class path: ' . $serviceFile);
 		
 		// Add locale.
-		$baseKey = strtolower('m.' . $moduleName . '.list.');
+		$baseKey = strtolower('m.' . $moduleName . '.list');
 		$keysInfos = array('fr_FR' => array($listShortName . '-label' => $listShortName . '-label'));
 		LocaleService::getInstance()->updatePackage($baseKey, $keysInfos, false, true, '');
 		$keysInfos = array('fr_FR' => array($listShortName . '-description' => $listShortName . '-description'));
 		LocaleService::getInstance()->updatePackage($baseKey, $keysInfos, false, true, '');
-		$this->message('List locales in ' . $baseKey . ': ' . $listShortName . '-label' . ' and ' . $listShortName  . '-text');
+		$this->message('List locales in ' . $baseKey . ': ' . $listShortName . '-label' . ' and ' . $listShortName  . '-description');
 
 		// Generate the import script.
 		$setupFolder = f_util_FileUtils::buildWebeditPath('modules', $moduleName, 'setup');
