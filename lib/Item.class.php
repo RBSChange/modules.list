@@ -72,6 +72,11 @@ class list_StaticListItem extends list_Item
 
 	public function getLabel()
 	{
-		return f_Locale::translate($this->labelKey);
+		$newKey = LocaleService::getInstance()->cleanOldKey($this->labelKey);
+		if ($newKey !== false)
+		{
+			return LocaleService::getInstance()->transFO($newKey);
+		} 
+		return LocaleService::getInstance()->transFO($this->labelKey);
 	}
 }

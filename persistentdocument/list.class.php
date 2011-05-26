@@ -11,11 +11,12 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	public function getLabel()
 	{
 		$label = parent::getLabel();
-		if (f_Locale::isLocaleKey($label))
+		$newKey = LocaleService::getInstance()->cleanOldKey($label);
+		if ($newKey !== false)
 		{
-			return f_Locale::translateUI($label);
-		}
-		return $label;
+			return LocaleService::getInstance()->transBO($newKey, array('ucf'));
+		} 
+		return LocaleService::getInstance()->transBO($label, array('ucf'));
 	}
 	
 	/**
@@ -24,11 +25,12 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	public function getDescription()
 	{
 		$description = parent::getDescription();
-		if (f_Locale::isLocaleKey($description))
+		$newKey = LocaleService::getInstance()->cleanOldKey($description);
+		if ($newKey !== false)
 		{
-			return f_Locale::translateUI($description);
-		}
-		return $description;
+			return LocaleService::getInstance()->transBO($newKey);
+		} 
+		return LocaleService::getInstance()->transBO($description);
 	}
 	
     /**
