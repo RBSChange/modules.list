@@ -3,8 +3,7 @@
 	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
 	
 	<systemfolder module="list" relatedmodule="<{$module}>">
-		<dynamiclist listid="<{$listId}>"
-			label="&amp;modules.<{$module}>.list.<{$shortNameUcf}>-label;"
-			description="&amp;modules.<{$module}>.list.<{$shortNameUcf}>-description;" />
+		<dynamiclist listid="<{$listId}>" label="m.<{$module}>.list.<{$shortName}>-label"
+			description="m.<{$module}>.list.<{$shortName}>-description" />
 	</systemfolder>
 </script>
