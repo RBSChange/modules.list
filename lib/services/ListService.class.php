@@ -40,7 +40,7 @@ class list_ListService extends f_persistentdocument_DocumentService
 	}
 
 	/**
-	 * @exception ListNotFoundException if $listId not found
+	 * @exception BaseException if $listId not found
 	 * @param string $listId
 	 * @return list_persistentdocument_list
 	 */
@@ -54,7 +54,7 @@ class list_ListService extends f_persistentdocument_DocumentService
 		}
 		else
 		{
-			throw new ListNotFoundException($listId);
+			throw new BaseException('list ' . $listId . ' not found');
 		}
 	}
 	

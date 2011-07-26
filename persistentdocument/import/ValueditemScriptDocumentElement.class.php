@@ -18,7 +18,7 @@ class list_ValueditemScriptDocumentElement extends import_ScriptDocumentElement
      */
     protected function getParentDocument()
     {
-        return $this->getParentByClassName('list_ValuededitablelistScriptDocumentElement');
+        return $this->getAncestorByClassName('list_ValuededitablelistScriptDocumentElement');
     }
     
 	/**

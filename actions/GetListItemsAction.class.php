@@ -37,7 +37,7 @@ class list_GetListItemsAction extends f_action_BaseJSONAction
 				
 				
 			}
-			catch (ListNotFoundException $e)
+			catch (BaseException $e)
 			{
 				Framework::exception($e);	
 			}

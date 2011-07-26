@@ -18,7 +18,7 @@ class list_ItemScriptDocumentElement extends import_ScriptDocumentElement
 	 */
 	protected function getParentDocument()
 	{
-		return $this->getParentByClassName('list_EditablelistScriptDocumentElement');
+		return $this->getAncestorByClassName('list_EditablelistScriptDocumentElement');
 	}
 	
 	/**

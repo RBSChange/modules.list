@@ -19,7 +19,7 @@ class list_GetItemsAction extends f_action_BaseAction
 			{
 				$list = $ls->getDocumentInstanceByListId($listName);
 			}
-			catch (ListNotFoundException $e)
+			catch (BaseException $e)
 			{
 				Framework::exception($e);	
 				// The list has not been found: switch to error view
