@@ -1,9 +1,9 @@
 <?php
-class list_GetListItemsAction extends f_action_BaseJSONAction
+class list_GetListItemsAction extends change_JSONAction
 {
     /**
-     * @param Context $context
-     * @param Request $request
+     * @param change_Context $context
+     * @param change_Request $request
      */
 	public function _execute($context, $request)
 	{
@@ -53,6 +53,6 @@ class list_GetListItemsAction extends f_action_BaseJSONAction
 
 	public function getRequestMethods()
 	{
-		return Request::POST | Request::GET;
+		return change_Request::POST | change_Request::GET;
 	}
 }

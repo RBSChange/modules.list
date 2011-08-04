@@ -1,9 +1,9 @@
 <?php
-class list_GetItemsAction extends f_action_BaseAction
+class list_GetItemsAction extends change_Action
 {
     /**
-     * @param Context $context
-     * @param Request $request
+     * @param change_Context $context
+     * @param change_Request $request
      */
 	public function _execute($context, $request)
 	{
@@ -24,7 +24,7 @@ class list_GetItemsAction extends f_action_BaseAction
 				Framework::exception($e);	
 				// The list has not been found: switch to error view
 				$request->setAttribute('message', $e->getMessage());
-				return View::ERROR;
+				return change_View::ERROR;
 			}
 			
 			$request->setAttribute('items', $list->getItems());
@@ -37,7 +37,7 @@ class list_GetItemsAction extends f_action_BaseAction
 			Framework::exception($e);
 		}
 
-		return View::SUCCESS;
+		return change_View::SUCCESS;
 	}
 
 	/**
@@ -50,6 +50,6 @@ class list_GetItemsAction extends f_action_BaseAction
 
 	public function getRequestMethods()
 	{
-		return Request::POST | Request::GET;
+		return change_Request::POST | change_Request::GET;
 	}
 }

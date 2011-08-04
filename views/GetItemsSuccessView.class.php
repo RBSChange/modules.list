@@ -3,7 +3,7 @@
  * @date Thu Mar 08 17:31:03 CET 2007
  * @author inthrycn
  */
-class list_GetItemsSuccessView extends f_view_BaseView
+class list_GetItemsSuccessView extends change_View
 {
 	public function _execute($context, $request)
 	{

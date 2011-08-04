@@ -3,7 +3,7 @@
  * @date Thu Mar 08 17:30:59 CET 2007
  * @author inthrycn
  */
-class list_GetItemsErrorView extends f_view_BaseView
+class list_GetItemsErrorView extends change_View
 {
 	public function _execute($context, $request)
 	{
