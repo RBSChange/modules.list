@@ -8,7 +8,7 @@ class list_GetListItemsAction extends change_JSONAction
 	public function _execute($context, $request)
 	{
 		// Retrieve request data
-		$listName = $request->getParameter(K::COMPONENT_ID_ACCESSOR);
+		$listName = $request->getParameter(change_Request::DOCUMENT_ID);
 		$rc = RequestContext::getInstance();
 		$result = array();
 		
