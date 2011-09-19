@@ -3,7 +3,7 @@
  * commands_list_AddDynamicList
  * @package modules.list.command
  */
-class commands_list_AddDynamicList extends commands_AbstractChangeCommand
+class commands_list_AddDynamicList extends c_ChangescriptCommand
 {
 	/**
 	 * @return String
