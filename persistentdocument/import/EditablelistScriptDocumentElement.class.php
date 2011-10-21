@@ -26,7 +26,7 @@ class list_EditablelistScriptDocumentElement extends import_ScriptDocumentElemen
 			$list = $this->getPersistentDocument();
 			foreach ($children as $scriptElement)
 			{
-				if ($scriptElement instanceof list_EditableitemScriptDocumentElement)
+				if ($scriptElement instanceof list_ItemScriptDocumentElement)
 				{
 					$item = $scriptElement->getPersistentDocument();
 					if (!$item->isNew())
