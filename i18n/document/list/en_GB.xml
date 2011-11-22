@@ -3,7 +3,7 @@
   <key id="document-name">list</key>
   <key id="label">label</key>
   <key id="listid">list identifier</key>
-  <key id="listid-help">this name must be unique in order to identify the list</key>
-  <key id="item">list items</key>
+  <key id="listid-help">This name must be unique in order to unambiguously identify the list.</key>
+  <key id="item">list components</key>
   <key id="description">description</key>
 </i18n>
