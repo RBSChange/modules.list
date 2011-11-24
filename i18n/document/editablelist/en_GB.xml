@@ -3,8 +3,12 @@
   <key id="document-name">editable list</key>
   <key id="label">label</key>
   <key id="listid">list identifier</key>
-  <key id="listid-help">this name must be unique in order to identify the list</key>
-  <key id="itemdocuments">list items</key>
+  <key id="listid-help">This name must be unique in order to unambiguously identify the list.</key>
+  <key id="itemdocuments">list components</key>
   <key id="description">description</key>
-  <key id="order">alphanumeric sort</key>
+  <key id="order">alphanumeric sorting</key>
+  <key id="itemdocuments-help">Displays the list of items present in the list. Also allows them to be reordered.</key>
+  <key id="order-help">Specifies if the list must be displayed in alphanumeric order or not.</key>
+  <key id="usevoifnottranslated">use original version if untranslated</key>
+  <key id="usevoifnottranslated-help">Allows choosing between using the original version or ignoring the item, when an item in the list is not translated.</key>
 </i18n>

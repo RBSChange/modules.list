@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.list.bo.doceditor.newitem" lcid="en_GB">
+  <key id="fieldlab">Label</key>
+  <key id="fieldval">Value</key>
+  <key id="title">item addition</key>
+</i18n>

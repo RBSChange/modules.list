@@ -7,10 +7,14 @@
   <key id="item-value">value</key>
   <key id="import-items-title">import list items</key>
   <key id="import-import">launch import</key>
-  <key id="importing">importing</key>
+  <key id="importing">import in progress…</key>
   <key id="import-file">import file</key>
-  <key id="items-imported">items imported</key>
+  <key id="items-imported">imported items</key>
   <key id="import-mode">import mode</key>
   <key id="replace">replace all elements</key>
-  <key id="complete">complete with missing elements</key>
+  <key id="complete">complete with the missing elements</key>
+  <key id="confirm-export-items-message">are you sure that you want to export this list's items to CSV?</key>
+  <key id="error-duplicate-list-entry">There already is an item labelled "{label}" in this list.</key>
+  <key id="error-duplicate-list-value-entry">There already is an item with value "{value}" in this list.</key>
+  <key id="error-importing-list">no items have been modified because an error occurred during the import: {exception}</key>
 </i18n>

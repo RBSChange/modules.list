@@ -12,7 +12,7 @@
     		this.createDocumentEditor('modules_list_item', listWidget.getSelectedItems()[0].id);
 		]]></body>
 	</action>
-	<action name="createValuededitablelist" label="&amp;modules.list.bo.actions.Create-Valuededitablelist;" icon="cubes_blue_add">
+	<action name="createValuededitablelist">
 		<parameter name="listWidget" />
 		<body><![CDATA[
 			this.createDocumentEditor('modules_list_valuededitablelist', listWidget.getSelectedItems()[0].id);
@@ -34,7 +34,7 @@
 	<action name="exportItems">
 		<parameter name="listWidget" />
 		<body><![CDATA[
-    		if (confirm("&amp;modules.list.bo.general.Confirm-export-items-message;"))
+    		if (confirm("${trans:m.list.bo.general.Confirm-export-items-message,ucf,js}"))
 			{
 				var docId = listWidget.getSelectedIds()[0];
 				var lang = this.getContextLang(listWidget);
