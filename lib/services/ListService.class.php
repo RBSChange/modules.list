@@ -57,16 +57,16 @@ class list_ListService extends f_persistentdocument_DocumentService
 			throw new BaseException('list ' . $listId . ' not found');
 		}
 	}
-	
+
 	/**
 	 * @param string $listId
 	 * @return list_persistentdocument_list or null
 	 */
 	public function getByListId($listId)
 	{
-	    return $this->createQuery()->add(Restrictions::eq('listid', $listId))->findUnique();
+		return $this->createQuery()->add(Restrictions::eq('listid', $listId))->findUnique();
 	}
-	
+
 	/**
 	 * @param list_persistentdocument_list $document
 	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
@@ -74,43 +74,46 @@ class list_ListService extends f_persistentdocument_DocumentService
 	 */
 	protected function preInsert($document, $parentNodeId)
 	{
-        if ($document->getListid() == null || $document->getListid() == 'modules_webapp/xxxx')
-        {
-            $document->setListid('modules_webapp/usr' .  time());  
-        }
+		if ($document->getListid() == null || $document->getListid() == 'modules_webapp/xxxx')
+		{
+			$document->setListid('modules_webapp/usr' .  time());
+		}
 	}
-	
+
 	/**
 	 * @param list_persistentdocument_list $document
 	 * @return boolean true if the document is publishable, false if it is not.
 	 */
 	public function isPublishable($document)
 	{
-	     if (parent::isPublishable($document))   
-	     {
-	         return (count($document->getItems()) > 0);
-	     }
-	     return false;
+		if (parent::isPublishable($document))
+		{
+			return (count($document->getItems()) > 0);
+		}
+		return false;
 	}
-	
+
 	/**
-	 * @param list_persistentdocument_list $document
+	 * @param form_persistentdocument_group $document
+	 * @param array<string, string> $attributes
+	 * @param integer $mode
 	 * @param string $moduleName
-	 * @param string $treeType
-	 * @param array<string, string> $nodeAttributes
-	 */	
-	public function addTreeAttributes($document, $moduleName, $treeType, &$nodeAttributes)
+	 */
+	public function completeBOAttributes($document, &$attributes, $mode, $moduleName)
 	{
-	    $nodeAttributes['listid'] = $document->getListid();
-	    $nodeAttributes['canBeDeleted'] = ($document->canBeDeleted() ? 'true' : 'false');
-	    try 
-	    {
-	        $nodeAttributes['nbitems'] = $document->countItems();
-	    } 
-	    catch (Exception $e)
-	    {
-	        Framework::exception($e);
-	    	$nodeAttributes['nbitems'] = '-';
-	    }
+		$attributes['canBeDeleted'] = ($document->canBeDeleted() ? 'true' : 'false');
+		if ($mode & DocumentHelper::MODE_CUSTOM)
+		{
+			$attributes['listid'] = $document->getListid();
+			try
+			{
+				$attributes['nbitems'] = strval($document->countItems());
+			}
+			catch (Exception $e)
+			{
+				Framework::exception($e);
+				$attributes['nbitems'] = '-';
+			}
+		}
 	}
 }

@@ -14,9 +14,9 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 		$newKey = LocaleService::getInstance()->cleanOldKey($label);
 		if ($newKey !== false)
 		{
-			return LocaleService::getInstance()->transBO($newKey, array('ucf'));
+			return LocaleService::getInstance()->trans($newKey, array('ucf'));
 		} 
-		return LocaleService::getInstance()->transBO($label, array('ucf'));
+		return LocaleService::getInstance()->trans($label, array('ucf'));
 	}
 	
 	/**
@@ -28,9 +28,9 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 		$newKey = LocaleService::getInstance()->cleanOldKey($description);
 		if ($newKey !== false)
 		{
-			return LocaleService::getInstance()->transBO($newKey);
+			return LocaleService::getInstance()->trans($newKey);
 		} 
-		return LocaleService::getInstance()->transBO($description);
+		return LocaleService::getInstance()->trans($description);
 	}
 	
     /**
