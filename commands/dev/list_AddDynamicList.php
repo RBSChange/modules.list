@@ -104,7 +104,8 @@ class commands_list_AddDynamicList extends c_ChangescriptCommand
 		
 		f_util_FileUtils::mkdir($servicesFolder);
 		f_util_FileUtils::write($serviceFile, $result);
-		ClassResolver::getInstance()->appendToAutoloadFile($serviceClass, realpath($serviceFile));
+
+		AutoloadBuilder::getInstance()->appendFile($serviceFile);
 		$this->message('Service class path: ' . $serviceFile);
 		
 		// Add locale.

@@ -35,7 +35,7 @@ class list_persistentdocument_editablelist extends list_persistentdocument_edita
 			}
 			
 			$tmp = $this->buildListItem($item);
-			$listOfItems[f_util_StringUtils::strip_accents($tmp->getLabel())] = $tmp;
+			$listOfItems[f_util_StringUtils::stripAccents($tmp->getLabel())] = $tmp;
 		}
 		// if  order == 1 make a natural order
 		if($order)
