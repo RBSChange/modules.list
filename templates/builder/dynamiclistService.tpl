@@ -1,27 +1,10 @@
 <?php
 /**
- * <{$class}>
- * @package modules.<{$module}>.lib.services
+ * @package modules.<{$module}>
+ * @method <{$class}> getInstance()
  */
-class <{$class}> extends BaseService implements list_ListItemsService
+class <{$class}> extends change_BaseService implements list_ListItemsService
 {
-	/**
-	 * @var <{$class}>
-	 */
-	private static $instance;
-
-	/**
-	 * @return <{$class}>
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @see list_persistentdocument_dynamiclist::getItems()
 	 * @return list_Item[]
