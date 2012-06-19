@@ -48,7 +48,7 @@ class list_persistentdocument_editablelist extends list_persistentdocument_edita
 	}
 
 	/**
-	 * @return Integer
+	 * @return integer
 	 */
 	public function countItems()
 	{
@@ -99,5 +99,5 @@ class list_persistentdocument_editablelist extends list_persistentdocument_edita
 	{
 		$this->checkLoaded();
 		return $this->newItemLabel;
-	}	
+	}
 }

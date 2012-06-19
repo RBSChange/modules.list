@@ -1,27 +1,10 @@
 <?php
 /**
- * @author intsimoa
  * @package modules.list
+ * @method list_ValuededitablelistService getInstance()
  */
 class list_ValuededitablelistService extends list_EditablelistService 
 {
-	/**
-	 * @var list_ValuededitablelistService
-	 */
-	private static $instance;
-
-	/**
-	 * @return list_ValuededitablelistService
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return list_persistentdocument_valuededitablelist
 	 */
@@ -36,12 +19,12 @@ class list_ValuededitablelistService extends list_EditablelistService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_list/valuededitablelist');
+		return $this->getPersistentProvider()->createQuery('modules_list/valuededitablelist');
 	}
 	
 	/**
 	 * @param list_persistentdocument_valuededitablelist $document
-	 * @param Integer $parentNodeId
+	 * @param integer $parentNodeId
 	 */
 	protected function preUpdate($document, $parentNodeId)
 	{

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <perspective>
 	<models>
 		<model name="modules_generic/rootfolder">
@@ -15,10 +15,10 @@
 				<drop model="modules_list/valuededitablelist" action="move" />
 			</drops>
 			<columns>
-				<column name="nbitems" flex="1"/>
+				<column name="nbitems" flex="1" />
 			</columns>
 			<contextactions>
-				<contextaction name="edit" />			
+				<contextaction name="edit" />
 				<groupactions name="create_">
 					<contextaction name="createFolder" />
 					<contextaction name="createEditablelist" />
@@ -26,24 +26,24 @@
 				</groupactions>
 				<contextaction name="openTreeNodeOrder" />
 			</contextactions>
-		</model>		
+		</model>
 		<model name="modules_generic/systemfolder">
 			<children>
 				<child model="modules_list/staticlist" />
-				<child model="modules_list/dynamiclist" />			
+				<child model="modules_list/dynamiclist" />
 				<child model="modules_list/editablelist" />
 				<child model="modules_list/valuededitablelist" />
 			</children>
 			<columns>
-				<column name="nbitems" flex="1"/>
-				<column name="listid" flex="1"/>
+				<column name="nbitems" flex="1" />
+				<column name="listid" flex="1" />
 			</columns>
 			<contextactions>
 				<contextaction name="edit" />
 				<contextaction name="openTreeNodeOrder" />
 				<contextaction name="openFolder" />
-			</contextactions>		
-		</model>		
+			</contextactions>
+		</model>
 		<model name="modules_generic/folder">
 			<children>
 				<child model="modules_generic/folder" />
@@ -56,7 +56,7 @@
 				<drop model="modules_list/valuededitablelist" action="move" />
 			</drops>
 			<columns>
-				<column name="nbitems" flex="1"/>
+				<column name="nbitems" flex="1" />
 			</columns>
 			<contextactions>
 				<contextaction name="edit" />
@@ -69,7 +69,7 @@
 				<contextaction name="openTreeNodeOrder" />
 				<contextaction name="openFolder" />
 			</contextactions>
-		</model>		
+		</model>
 		<model name="modules_list/editablelist">
 			<children>
 				<child model="modules_list/item" from="itemdocuments" />
@@ -81,19 +81,19 @@
 				<contextaction name="importItems" />
 				<contextaction name="exportItems" />
 			</contextactions>
-		</model>		
+		</model>
 		<model name="modules_list/item">
 			<contextactions>
 				<contextaction name="edit" />
 				<contextaction name="delete" />
 			</contextactions>
-		</model>		
+		</model>
 		<model name="modules_list/valuededitablelist">
 			<children>
 				<child model="modules_list/valueditem" from="itemdocuments" />
 			</children>
 			<columns>
-				<column name="value" flex="1"/>
+				<column name="value" flex="1" />
 			</columns>
 			<contextactions>
 				<contextaction name="edit" />
@@ -108,7 +108,7 @@
 				<contextaction name="edit" />
 				<contextaction name="delete" />
 			</contextactions>
-		</model>		
+		</model>
 		<model name="modules_list/staticlist">
 			<contextactions>
 				<contextaction name="edit" />
@@ -121,13 +121,13 @@
 				<contextaction name="exportItems" />
 			</contextactions>
 		</model>
-	</models>	
+	</models>
 	<toolbar>
 		<toolbarbutton name="edit" />
 		<toolbarbutton name="delete" />
-	</toolbar>	
+	</toolbar>
 	<actions>
-		<action name="refresh" single="true" icon="refresh" labeli18n="m.uixul.bo.actions.refresh"/>
+		<action name="refresh" single="true" icon="refresh" labeli18n="m.uixul.bo.actions.refresh" />
 		<action name="edit" single="true" permission="Load" icon="edit" labeli18n="m.uixul.bo.actions.edit" />
 		<action name="delete" permission="Delete" icon="delete" labeli18n="m.uixul.bo.actions.delete" />
 		<action name="openFolder" single="true" icon="open-folder" labeli18n="m.uixul.bo.actions.openfolder" />

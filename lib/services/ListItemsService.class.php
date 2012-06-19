@@ -1,7 +1,6 @@
 <?php
 /**
- * @date Tue Mar 06 15:31:43 CET 2007
- * @author inthrycn
+ * @package modules.list
  */
 interface list_ListItemsService
 {
@@ -12,7 +11,7 @@ interface list_ListItemsService
 	
 	/**
 	 * Optional.
-	 * @param String $value
+	 * @param string $value
 	 */
 //	public function getItemByValue($value);
 	

@@ -1,30 +1,12 @@
 <?php
 /**
- * list_ModuleService
- * @package modules.list.lib.services
+ * @package modules.list
+ * @method list_ModuleService getInstance()
  */
 class list_ModuleService extends ModuleBaseService
 {
 	/**
-	 * Singleton
-	 * @var list_ModuleService
-	 */
-	private static $instance = null;
-
-	/**
-	 * @return list_ModuleService
-	 */
-	public static function getInstance()
-	{
-		if (is_null(self::$instance))
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-	
-	/**
-	 * @param Integer $documentId
+	 * @param integer $documentId
 	 * @return f_persistentdocument_PersistentTreeNode
 	 */
 	public function getParentNodeForPermissions($documentId)

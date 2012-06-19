@@ -1,27 +1,10 @@
 <?php
 /**
- * @author intsimoa
  * @package modules.list
+ * @method list_ValueditemService getInstance()
  */
 class list_ValueditemService extends f_persistentdocument_DocumentService
 {
-	/**
-	 * @var list_ValueditemService
-	 */
-	private static $instance;
-
-	/**
-	 * @return list_ValueditemService
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return list_persistentdocument_valueditem
 	 */
@@ -36,7 +19,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_list/valueditem');
+		return $this->getPersistentProvider()->createQuery('modules_list/valueditem');
 	}
 	
 	/**
@@ -52,8 +35,9 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see persistentdocument/f_persistentdocument_DocumentService#preInsert($document, $parentNodeId)
+	 * @param list_persistentdocument_valueditem $document
+	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @return void
 	 */
 	protected function preInsert($document, $parentNodeId)
 	{
@@ -75,8 +59,9 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see persistentdocument/f_persistentdocument_DocumentService#preUpdate($document, $parentNodeId)
+	 * @param list_persistentdocument_valueditem $document
+	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @return void
 	 */
 	protected function preUpdate($document, $parentNodeId)
 	{

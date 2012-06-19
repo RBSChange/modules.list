@@ -9,7 +9,7 @@ class list_ExportItemsAction extends change_Action
 	 * @param change_Request $request
 	 */
 	public function _execute($context, $request)
-    {
+	{
 		$list = $this->getDocumentInstanceFromRequest($request);
 		
 		$items = $list->getItems();
@@ -33,5 +33,5 @@ class list_ExportItemsAction extends change_Action
 		header('Content-disposition: attachment; filename="'.$fileName.'"');
 		echo $csv;
 		exit;
-    }
+	}
 }

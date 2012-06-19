@@ -7,7 +7,7 @@ class list_persistentdocument_staticlist extends list_persistentdocument_staticl
 	private $deserializedValues;
 	
 	/**
-	 * @param String $value the serialized array of items.
+	 * @param string $value the serialized array of items.
 	 */
 	public function setItemvalues($value)
 	{

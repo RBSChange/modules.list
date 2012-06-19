@@ -1,27 +1,10 @@
 <?php
 /**
- * @date Thu Mar 01 11:16:51 CET 2007
- * @author inthrycn
+ * @package modules.list
+ * @method list_ItemService getInstance()
  */
 class list_ItemService extends f_persistentdocument_DocumentService
 {
-	/**
-	 * @var list_ItemService
-	 */
-	private static $instance;
-
-	/**
-	 * @return list_ItemService
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return list_persistentdocument_item
 	 */
@@ -36,21 +19,22 @@ class list_ItemService extends f_persistentdocument_DocumentService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_list/item');
+		return $this->getPersistentProvider()->createQuery('modules_list/item');
 	}
 
 	/**
-	 *
+	 * @todo WTF? Deprecate?
 	 * @return list_persistentdocument_item
 	 */
 	public function getItems()
 	{
-	    
+		
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see persistentdocument/f_persistentdocument_DocumentService#preInsert($document, $parentNodeId)
+	 * @param list_persistentdocument_item $document
+	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @return void
 	 */
 	protected function preInsert($document, $parentNodeId)
 	{
@@ -64,8 +48,9 @@ class list_ItemService extends f_persistentdocument_DocumentService
 	}
 	
 	/**
-	 * (non-PHPdoc)
-	 * @see persistentdocument/f_persistentdocument_DocumentService#preUpdate($document, $parentNodeId)
+	 * @param list_persistentdocument_item $document
+	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @return void
 	 */
 	protected function preUpdate($document, $parentNodeId)
 	{
@@ -86,9 +71,9 @@ class list_ItemService extends f_persistentdocument_DocumentService
 	 */
 	protected function preDelete($document)
 	{
-        if (($count = $this->countReferences($document)) > 1)
-        {
-            throw new IllegalOperationException('Document item cannot be deleted (' . ($count - 1) . ' usage)');
-        }
-	}	
+		if (($count = $this->countReferences($document)) > 1)
+		{
+			throw new IllegalOperationException('Document item cannot be deleted (' . ($count - 1) . ' usage)');
+		}
+	}
 }

@@ -1,10 +1,10 @@
 <?php
 class list_GetListItemsAction extends change_JSONAction
 {
-    /**
-     * @param change_Context $context
-     * @param change_Request $request
-     */
+	/**
+	 * @param change_Context $context
+	 * @param change_Request $request
+	 */
 	public function _execute($context, $request)
 	{
 		// Retrieve request data
@@ -29,13 +29,11 @@ class list_GetListItemsAction extends change_JSONAction
 					}
 					if ($item->getIcon())
 					{
-					   $itemArray['icon'] =  $item->getIcon();
-					}				
+						$itemArray['icon'] =  $item->getIcon();
+					}
 					
 					$result[] = $itemArray;
 				}
-				
-				
 			}
 			catch (BaseException $e)
 			{

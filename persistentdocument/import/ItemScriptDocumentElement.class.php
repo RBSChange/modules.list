@@ -30,8 +30,8 @@ class list_ItemScriptDocumentElement extends import_ScriptDocumentElement
 	}
 	
 	/**
-	 * @param String $label
-	 * @param String $type
+	 * @param string $label
+	 * @param string $type
 	 * @return f_persistentdocument_PersistentDocument
 	 */
 	protected function getChildDocumentByProperty($propName, $propValue, $type)

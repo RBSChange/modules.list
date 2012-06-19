@@ -1,27 +1,10 @@
 <?php
 /**
- * @date Thu Mar 01 11:15:53 CET 2007
- * @author inthrycn
+ * @package modules.list
+ * @method list_ListService getInstance()
  */
 class list_ListService extends f_persistentdocument_DocumentService
 {
-	/**
-	 * @var list_ListService
-	 */
-	private static $instance;
-
-	/**
-	 * @return list_ListService
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-
 	/**
 	 * @return list_persistentdocument_list
 	 */
@@ -36,7 +19,7 @@ class list_ListService extends f_persistentdocument_DocumentService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_list/list');
+		return $this->getPersistentProvider()->createQuery('modules_list/list');
 	}
 
 	/**
@@ -69,7 +52,7 @@ class list_ListService extends f_persistentdocument_DocumentService
 
 	/**
 	 * @param list_persistentdocument_list $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @param integer $parentNodeId Parent node ID where to save the document (optionnal).
 	 * @return void
 	 */
 	protected function preInsert($document, $parentNodeId)

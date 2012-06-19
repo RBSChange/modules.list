@@ -1,27 +1,10 @@
 <?php
 /**
- * @date Mon Apr 23 16:48:14 CEST 2007
- * @author INTcoutL
+ * @package modules.list
+ * @method list_EditablelistService getInstance()
  */
 class list_EditablelistService extends list_ListService
 {
-	/**
-	 * @var list_EditablelistService
-	 */
-	private static $instance;
-	
-	/**
-	 * @return list_EditablelistService
-	 */
-	public static function getInstance()
-	{
-		if (self::$instance === null)
-		{
-			self::$instance = new self();
-		}
-		return self::$instance;
-	}
-	
 	/**
 	 * @return list_persistentdocument_editablelist
 	 */
@@ -36,7 +19,7 @@ class list_EditablelistService extends list_ListService
 	 */
 	public function createQuery()
 	{
-		return $this->pp->createQuery('modules_list/editablelist');
+		return $this->getPersistentProvider()->createQuery('modules_list/editablelist');
 	}
 	
 	/**
@@ -71,7 +54,7 @@ class list_EditablelistService extends list_ListService
 	
 	/**
 	 * @param list_persistentdocument_editablelist $document
-	 * @param Integer $parentNodeId
+	 * @param integer $parentNodeId
 	 */
 	protected function preUpdate($document, $parentNodeId)
 	{

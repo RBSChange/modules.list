@@ -5,8 +5,8 @@
  */
 class list_StaticitemElement extends  import_ScriptBaseElement
 {
-    public function getStaticItem()
-    {
-        return new list_StaticListItem($this->attributes['label'], $this->attributes['value']);
-    }
+	public function getStaticItem()
+	{
+		return new list_StaticListItem($this->attributes['label'], $this->attributes['value']);
+	}
 }

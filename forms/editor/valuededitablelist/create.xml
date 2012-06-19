@@ -3,6 +3,6 @@
 	<section labeli18n="m.uixul.bo.doceditor.fieldsgroup.title">
 		<field name="label" hidehelp="true" />
 		<field name="description" hidehelp="true" />
-		<field name="useVoIfNotTranslated"/>
+		<field name="useVoIfNotTranslated" />
 	</section>
 </panel>

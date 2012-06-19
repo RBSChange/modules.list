@@ -6,7 +6,7 @@
 class list_persistentdocument_list extends list_persistentdocument_listbase
 {
 	/**
-	 * @return String
+	 * @return string
 	 */
 	public function getLabel()
 	{
@@ -20,7 +20,7 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	}
 	
 	/**
-	 * @return String
+	 * @return string
 	 */
 	public function getDescription()
 	{
@@ -33,24 +33,24 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 		return LocaleService::getInstance()->trans($description);
 	}
 	
-    /**
-     * @return list_Item[]
-     */
+	/**
+	 * @return list_Item[]
+	 */
 	public function getItems()
 	{
 		return array();	
 	}
 	
 	/**
-	 * @return Integer
+	 * @return integer
 	 */
 	public function countItems()
 	{
-	    return count($this->getItems());
+		return count($this->getItems());
 	}
 	
 	/**
-	 * @return Boolean
+	 * @return boolean
 	 */
 	public function canBeDeleted()
 	{
