@@ -8,28 +8,9 @@ class list_persistentdocument_list extends list_persistentdocument_listbase
 	/**
 	 * @return string
 	 */
-	public function getLabel()
-	{
-		$label = parent::getLabel();
-		$newKey = LocaleService::getInstance()->cleanOldKey($label);
-		if ($newKey !== false)
-		{
-			return LocaleService::getInstance()->trans($newKey, array('ucf'));
-		} 
-		return LocaleService::getInstance()->trans($label, array('ucf'));
-	}
-	
-	/**
-	 * @return string
-	 */
 	public function getDescription()
 	{
 		$description = parent::getDescription();
-		$newKey = LocaleService::getInstance()->cleanOldKey($description);
-		if ($newKey !== false)
-		{
-			return LocaleService::getInstance()->trans($newKey);
-		} 
 		return LocaleService::getInstance()->trans($description);
 	}
 	

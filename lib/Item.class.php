@@ -72,11 +72,6 @@ class list_StaticListItem extends list_Item
 
 	public function getLabel()
 	{
-		$newKey = LocaleService::getInstance()->cleanOldKey($this->labelKey);
-		if ($newKey !== false)
-		{
-			return LocaleService::getInstance()->trans($newKey, array('ucf'));
-		} 
 		return LocaleService::getInstance()->trans($this->labelKey, array('ucf'));
 	}
 }
