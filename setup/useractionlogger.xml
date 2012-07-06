@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <script>
-  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
-  <actiondef modulename="list" actionname="insert.folder" label="modules.list.bo.useractionlogger.insert-folder"/>
-  <actiondef modulename="list" actionname="update.folder" label="modules.list.bo.useractionlogger.update-folder"/>
-  <actiondef modulename="list" actionname="savepermissions.folder" label="modules.list.bo.useractionlogger.savepermissions-folder"/>
-  <actiondef modulename="list" actionname="delete.folder" label="modules.list.bo.useractionlogger.delete-folder"/>
-  <actiondef modulename="list" actionname="insert.editablelist" label="modules.list.bo.useractionlogger.insert-editablelist"/>
-  <actiondef modulename="list" actionname="insert.item" label="modules.list.bo.useractionlogger.insert-item"/>
-  <actiondef modulename="list" actionname="updatetranslation.item" label="modules.list.bo.useractionlogger.updatetranslation-item"/>
-  <actiondef modulename="list" actionname="update.editablelist" label="modules.list.bo.useractionlogger.update-editablelist"/>
-  <actiondef modulename="list" actionname="deletelocalization.item" label="modules.list.bo.useractionlogger.deletelocalization-item"/>
-  <actiondef modulename="list" actionname="delete.item" label="modules.list.bo.useractionlogger.delete-item"/>
-  <actiondef modulename="list" actionname="move.systemfolder" label="modules.list.bo.useractionlogger.move-systemfolder"/>
-  <actiondef modulename="list" actionname="insert.valuededitablelist" label="modules.list.bo.useractionlogger.insert-valuededitablelist"/>
-  <actiondef modulename="list" actionname="update.valuededitablelist" label="modules.list.bo.useractionlogger.update-valuededitablelist"/>
-  <actiondef modulename="list" actionname="insert.valueditem" label="modules.list.bo.useractionlogger.insert-valueditem"/>
-  <actiondef modulename="list" actionname="update.valueditem" label="modules.list.bo.useractionlogger.update-valueditem"/>
-  <actiondef modulename="list" actionname="updatetranslation.valueditem" label="modules.list.bo.useractionlogger.updatetranslation-valueditem"/>
-  <actiondef modulename="list" actionname="deactivated.valueditem" label="modules.list.bo.useractionlogger.deactivated-valueditem"/>
-  <actiondef modulename="list" actionname="reactivate.valueditem" label="modules.list.bo.useractionlogger.reactivate-valueditem"/>
-  <actiondef modulename="list" actionname="deletelocalization.valueditem" label="modules.list.bo.useractionlogger.deletelocalization-valueditem"/>
-  <actiondef modulename="list" actionname="delete.valueditem" label="modules.list.bo.useractionlogger.delete-valueditem"/>
-  <actiondef modulename="list" actionname="move.valuededitablelist" label="modules.list.bo.useractionlogger.move-valuededitablelist"/>
-  <actiondef modulename="list" actionname="move.folder" label="modules.list.bo.useractionlogger.move-folder"/>
-  <actiondef modulename="list" actionname="update.staticlist" label="modules.list.bo.useractionlogger.update-staticlist"/>
-  <actiondef modulename="list" actionname="update.dynamiclist" label="modules.list.bo.useractionlogger.update-dynamiclist"/>
+	<binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml" />
+	<actiondef modulename="list" actionname="insert.folder" label="modules.list.bo.useractionlogger.insert-folder" />
+	<actiondef modulename="list" actionname="update.folder" label="modules.list.bo.useractionlogger.update-folder" />
+	<actiondef modulename="list" actionname="savepermissions.folder" label="modules.list.bo.useractionlogger.savepermissions-folder" />
+	<actiondef modulename="list" actionname="delete.folder" label="modules.list.bo.useractionlogger.delete-folder" />
+	<actiondef modulename="list" actionname="insert.editablelist" label="modules.list.bo.useractionlogger.insert-editablelist" />
+	<actiondef modulename="list" actionname="insert.item" label="modules.list.bo.useractionlogger.insert-item" />
+	<actiondef modulename="list" actionname="updatetranslation.item" label="modules.list.bo.useractionlogger.updatetranslation-item" />
+	<actiondef modulename="list" actionname="update.editablelist" label="modules.list.bo.useractionlogger.update-editablelist" />
+	<actiondef modulename="list" actionname="deletelocalization.item" label="modules.list.bo.useractionlogger.deletelocalization-item" />
+	<actiondef modulename="list" actionname="delete.item" label="modules.list.bo.useractionlogger.delete-item" />
+	<actiondef modulename="list" actionname="move.systemfolder" label="modules.list.bo.useractionlogger.move-systemfolder" />
+	<actiondef modulename="list" actionname="insert.valuededitablelist" label="modules.list.bo.useractionlogger.insert-valuededitablelist" />
+	<actiondef modulename="list" actionname="update.valuededitablelist" label="modules.list.bo.useractionlogger.update-valuededitablelist" />
+	<actiondef modulename="list" actionname="insert.valueditem" label="modules.list.bo.useractionlogger.insert-valueditem" />
+	<actiondef modulename="list" actionname="update.valueditem" label="modules.list.bo.useractionlogger.update-valueditem" />
+	<actiondef modulename="list" actionname="updatetranslation.valueditem" label="modules.list.bo.useractionlogger.updatetranslation-valueditem" />
+	<actiondef modulename="list" actionname="deactivated.valueditem" label="modules.list.bo.useractionlogger.deactivated-valueditem" />
+	<actiondef modulename="list" actionname="reactivate.valueditem" label="modules.list.bo.useractionlogger.reactivate-valueditem" />
+	<actiondef modulename="list" actionname="deletelocalization.valueditem" label="modules.list.bo.useractionlogger.deletelocalization-valueditem" />
+	<actiondef modulename="list" actionname="delete.valueditem" label="modules.list.bo.useractionlogger.delete-valueditem" />
+	<actiondef modulename="list" actionname="move.valuededitablelist" label="modules.list.bo.useractionlogger.move-valuededitablelist" />
+	<actiondef modulename="list" actionname="move.folder" label="modules.list.bo.useractionlogger.move-folder" />
+	<actiondef modulename="list" actionname="update.staticlist" label="modules.list.bo.useractionlogger.update-staticlist" />
+	<actiondef modulename="list" actionname="update.dynamiclist" label="modules.list.bo.useractionlogger.update-dynamiclist" />
 </script>

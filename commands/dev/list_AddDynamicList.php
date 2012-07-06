@@ -73,7 +73,7 @@ class commands_list_AddDynamicList extends c_ChangescriptCommand
 			return $this->quitError("Module $moduleName does not exits");
 		}
 		
-		$servicesFolder = f_util_FileUtils::buildWebeditPath('modules', $moduleName, 'lib', 'services');
+		$servicesFolder = f_util_FileUtils::buildProjectPath('modules', $moduleName, 'lib', 'services');
 		$serviceFile = $servicesFolder . DIRECTORY_SEPARATOR . 'List' . $listShortNameUcf . 'Service.php';
 		$serviceClass = $moduleName . '_List' . $listShortNameUcf . 'Service';
 		$listId = 'modules_' . $moduleName . '/' . $listShortName;
@@ -84,7 +84,7 @@ class commands_list_AddDynamicList extends c_ChangescriptCommand
 		}
 		
 		$generator = new builder_Generator();
-		$generator->setTemplateDir(f_util_FileUtils::buildWebeditPath('modules', 'list', 'templates', 'builder'));
+		$generator->setTemplateDir(f_util_FileUtils::buildProjectPath('modules', 'list', 'templates', 'builder'));
 		$generator->assign_by_ref('author', $this->getAuthor());
 		$generator->assign_by_ref('shortName', $listShortName);
 		$generator->assign_by_ref('listId', $listId);
@@ -108,7 +108,7 @@ class commands_list_AddDynamicList extends c_ChangescriptCommand
 		$this->message('List locales in ' . $baseKey . ': ' . $listShortName . '-label' . ' and ' . $listShortName  . '-description');
 
 		// Generate the import script.
-		$setupFolder = f_util_FileUtils::buildWebeditPath('modules', $moduleName, 'setup');
+		$setupFolder = f_util_FileUtils::buildProjectPath('modules', $moduleName, 'setup');
 		$scriptFile = $setupFolder . DIRECTORY_SEPARATOR . 'list-' . $listShortName . '.xml';
 		if (file_exists($scriptFile))
 		{

@@ -36,7 +36,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param list_persistentdocument_valueditem $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @param integer $parentNodeId Parent node ID where to save the document (optionnal).
 	 * @return void
 	 */
 	protected function preInsert($document, $parentNodeId)
@@ -60,7 +60,7 @@ class list_ValueditemService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param list_persistentdocument_valueditem $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @param integer $parentNodeId Parent node ID where to save the document (optionnal).
 	 * @return void
 	 */
 	protected function preUpdate($document, $parentNodeId)

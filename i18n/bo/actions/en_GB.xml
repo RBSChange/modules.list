@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.bo.actions" lcid="en_GB">
-  <key id="create_">Create</key>
-  <key id="create-editablelist">create a list</key>
-  <key id="create-item">create a list value</key>
-  <key id="create-valuededitablelist">create a key-value list</key>
-  <key id="create-valueditem">create a list value</key>
-  <key id="export-items">export items to a CSV file</key>
-  <key id="import-items">import items from a CSV file</key>
+	<key id="create_">Create</key>
+	<key id="create-editablelist">create a list</key>
+	<key id="create-item">create a list value</key>
+	<key id="create-valuededitablelist">create a key-value list</key>
+	<key id="create-valueditem">create a list value</key>
+	<key id="export-items">export items to a CSV file</key>
+	<key id="import-items">import items from a CSV file</key>
 </i18n>

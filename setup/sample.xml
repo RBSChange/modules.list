@@ -3,22 +3,13 @@
 	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
 	<rootfolder module="list">
 		<folder byLabel="Exemples">
-			<dynamiclist listid="modules_list/sampledynamic"
-				description="Exemple de liste dynamique" label="Exemple de liste dynamique" />
-
-			<staticlist listid="modules_list/samplestatic"
-				description="Exemple de liste statique" label="Exemple de liste statique">
-				<staticitem label="&amp;modules.website.bo.general.visibility.Visible;"
-					value="1" />
-				<staticitem
-					label="&amp;modules.website.bo.general.visibility.Hidden-in-menu-only;"
-					value="2" />
-				<staticitem label="&amp;modules.website.bo.general.visibility.Visible;"
-					value="0" />
+			<dynamiclist listid="modules_list/sampledynamic" description="Exemple de liste dynamique" label="Exemple de liste dynamique" />
+			<staticlist listid="modules_list/samplestatic" description="Exemple de liste statique" label="Exemple de liste statique">
+				<staticitem label="m.website.bo.general.visibility.visible" value="1" />
+				<staticitem label="m.website.bo.general.visibility.hidden-in-menu-only" value="2" />
+				<staticitem label="m.website.bo.general.visibility.visible" value="0" />
 			</staticlist>
-
-			<editablelist listid="modules_list/sampleeditable"
-				label="Exemple de liste éditable" description="Exemple de liste éditable">
+			<editablelist listid="modules_list/sampleeditable" label="Exemple de liste éditable" description="Exemple de liste éditable">
 				<item byLabel="Oui" id="yes" />
 				<item byLabel="Non" id="no" />
 				<i18n lang="en">
@@ -26,9 +17,7 @@
 					<item byRefid="no" label="No" />
 				</i18n>
 			</editablelist>
-		 
-			<valuededitablelist listid="modules_list/samplezipcode"
-				description="Liste des codes postaux" label="Liste des codes postaux">
+			<valuededitablelist listid="modules_list/samplezipcode" description="Liste des codes postaux" label="Liste des codes postaux">
 				<valueditem label="01 - Ain" byValue="01" />
 				<valueditem label="02 - Aisne" byValue="02" />
 				<valueditem label="03 - Allier" byValue="03" />

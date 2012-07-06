@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.document.staticlist" lcid="fr_FR">
-  <key id="document-name">liste statique</key>
-  <key id="label">libellé</key>
-  <key id="description">description</key>
+	<key id="document-name">liste statique</key>
+	<key id="label">libellé</key>
+	<key id="description">description</key>
 </i18n>

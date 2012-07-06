@@ -3,13 +3,13 @@
 	<action name="createEditablelist">
 		<parameter name="listWidget" />
 		<body><![CDATA[
-    		this.createDocumentEditor('modules_list_editablelist', listWidget.getSelectedItems()[0].id);
+			this.createDocumentEditor('modules_list_editablelist', listWidget.getSelectedItems()[0].id);
 		]]></body>
 	</action>
 	<action name="createItem">
 		<parameter name="listWidget" />
 		<body><![CDATA[
-    		this.createDocumentEditor('modules_list_item', listWidget.getSelectedItems()[0].id);
+			this.createDocumentEditor('modules_list_item', listWidget.getSelectedItems()[0].id);
 		]]></body>
 	</action>
 	<action name="createValuededitablelist">
@@ -34,7 +34,7 @@
 	<action name="exportItems">
 		<parameter name="listWidget" />
 		<body><![CDATA[
-    		if (confirm("${trans:m.list.bo.general.Confirm-export-items-message,ucf,js}"))
+			if (confirm("${trans:m.list.bo.general.confirm-export-items-message,ucf,js}"))
 			{
 				var docId = listWidget.getSelectedIds()[0];
 				var lang = this.getContextLang(listWidget);
@@ -45,7 +45,7 @@
 	<action name="importItems">
 		<parameter name="listWidget" />
 		<body><![CDATA[
-    		try
+			try
 			{
 				this.getController().openModalDialog(this, 'ImportItems', {listId: listWidget.getSelectedIds()[0], module: this});
 			}

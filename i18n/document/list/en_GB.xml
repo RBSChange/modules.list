@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.document.list" lcid="en_GB">
-  <key id="document-name">list</key>
-  <key id="label">label</key>
-  <key id="listid">list identifier</key>
-  <key id="listid-help">This name must be unique in order to unambiguously identify the list.</key>
-  <key id="item">list components</key>
-  <key id="description">description</key>
+	<key id="document-name">list</key>
+	<key id="label">label</key>
+	<key id="listid">list identifier</key>
+	<key id="listid-help">This name must be unique in order to unambiguously identify the list.</key>
+	<key id="item">list components</key>
+	<key id="description">description</key>
 </i18n>

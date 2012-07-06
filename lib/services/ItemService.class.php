@@ -33,7 +33,7 @@ class list_ItemService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param list_persistentdocument_item $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @param integer $parentNodeId Parent node ID where to save the document (optionnal).
 	 * @return void
 	 */
 	protected function preInsert($document, $parentNodeId)
@@ -49,7 +49,7 @@ class list_ItemService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param list_persistentdocument_item $document
-	 * @param Integer $parentNodeId Parent node ID where to save the document (optionnal).
+	 * @param integer $parentNodeId Parent node ID where to save the document (optionnal).
 	 * @return void
 	 */
 	protected function preUpdate($document, $parentNodeId)

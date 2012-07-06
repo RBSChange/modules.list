@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.document.valueditem" lcid="fr_FR">
-  <key id="document-name">item valué de liste</key>
-  <key id="label">libellé</key>
-  <key id="label-help">libellé affiché de l'item.</key>
-  <key id="value">Valeur</key>
-  <key id="value-help">Valeur réel de l'item.</key>
+	<key id="document-name">item valué de liste</key>
+	<key id="label">libellé</key>
+	<key id="label-help">libellé affiché de l'item.</key>
+	<key id="value">Valeur</key>
+	<key id="value-help">Valeur réel de l'item.</key>
 </i18n>

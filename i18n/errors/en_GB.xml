@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.errors" lcid="en_GB">
-  <key id="modules-list-getpreferencesdocument">you do not have the appropriate permissions to perform the following operation: "Open preferences"</key>
-  <key id="modules-list-order">you do not have the appropriate permissions to perform the following operation: "Reorder the elements"</key>
-  <key id="modules-list-enabled">you do not have the appropriate permissions to perform the following operation: "Access the module"</key>
+	<key id="modules-list-getpreferencesdocument">you do not have the appropriate permissions to perform the following operation: "Open preferences"</key>
+	<key id="modules-list-order">you do not have the appropriate permissions to perform the following operation: "Reorder the elements"</key>
+	<key id="modules-list-enabled">you do not have the appropriate permissions to perform the following operation: "Access the module"</key>
 </i18n>

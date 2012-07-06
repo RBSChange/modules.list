@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.bo.general.column" lcid="fr_FR">
-  <key id="nbitems">élements</key>
-  <key id="listid">code de la liste</key>
-  <key id="value">valeur</key>
+	<key id="nbitems">élements</key>
+	<key id="listid">code de la liste</key>
+	<key id="value">valeur</key>
 </i18n>

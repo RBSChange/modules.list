@@ -14,8 +14,8 @@ class list_ExportItemsAction extends change_Action
 		
 		$items = $list->getItems();
 		$fieldNames = array(
-			f_Locale::translateUI('&modules.list.bo.general.Item-label;'),
-			f_Locale::translateUI('&modules.list.bo.general.Item-value;')
+			LocaleService::getInstance()->trans('m.list.bo.general.item-label', array('ucf')),
+			LocaleService::getInstance()->trans('m.list.bo.general.item-value', array('ucf'))
 		);
 		$rows = array();
 		foreach ($items as $item)

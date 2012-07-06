@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <i18n baseKey="m.list.document.editablelist" lcid="de_DE">
-  <key id="document-name">bearbeitbare Liste</key>
-  <key id="label">Name</key>
-  <key id="listid">Benutzername der Liste</key>
-  <key id="listid-help">dieser Name muss einzigartig sein, um die Liste ohne Zweifel identifizieren zu können </key>
-  <key id="itemdocuments">Bestandteile der Liste</key>
-  <key id="itemdocuments-help">Liste der Elemente anzeigen aus der die Liste besteht. Ermöglicht ausserdem sie zu ordnen.</key>
-  <key id="description">Beschreibung</key>
-  <key id="order">alfanumerische Sortierung</key>
-  <key id="order-help">Zeigt an, ob die Liste in alfanumerischer Ordnung angezeigt werden soll, oder nicht.</key>
+	<key id="document-name">bearbeitbare Liste</key>
+	<key id="label">Name</key>
+	<key id="listid">Benutzername der Liste</key>
+	<key id="listid-help">dieser Name muss einzigartig sein, um die Liste ohne Zweifel identifizieren zu können </key>
+	<key id="itemdocuments">Bestandteile der Liste</key>
+	<key id="itemdocuments-help">Liste der Elemente anzeigen aus der die Liste besteht. Ermöglicht ausserdem sie zu ordnen.</key>
+	<key id="description">Beschreibung</key>
+	<key id="order">alfanumerische Sortierung</key>
+	<key id="order-help">Zeigt an, ob die Liste in alfanumerischer Ordnung angezeigt werden soll, oder nicht.</key>
 </i18n>

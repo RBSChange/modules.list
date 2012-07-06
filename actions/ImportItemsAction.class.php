@@ -10,12 +10,12 @@ class list_ImportItemsAction extends change_JSONAction
 	{
 		if (!count($_FILES))
 		{
-			return $this->sendJSONError(f_Locale::translateUI('&modules.list.bo.general.Import-error;'));
+			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.import-error', array('ucf')));
 		}
 		
 		if ($_FILES['filename']['error'] != UPLOAD_ERR_OK)
 		{
-			return $this->sendJSONError(f_Locale::translateUI('&modules.list.bo.general.Import-error;'));
+			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.import-error', array('ucf')));
 		}
 		
 		$filePath = $_FILES['filename']['tmp_name'];
@@ -34,7 +34,7 @@ class list_ImportItemsAction extends change_JSONAction
 			}
 			if (count($data) < 1)
 			{
-				$warnings[] = array(f_Locale::translateUI('&modules.list.bo.general.Line-ignored;', array('linecCount' => $lineCount)));
+				$warnings[] = array(LocaleService::getInstance()->trans('m.list.bo.general.line-ignored', array('ucf'), array('linecCount' => $lineCount)));
 				continue;
 			}
 			$rows[] = $data;
@@ -112,7 +112,7 @@ class list_ImportItemsAction extends change_JSONAction
 		}
 		else
 		{
-			return $this->sendJSONError(f_Locale::translateUI('&modules.list.bo.general.Invalid-list;'));
+			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.invalid-list', array('ucf')));
 		}
 		
 		return $this->sendJSON(array('warnings' => $warnings));
@@ -129,11 +129,11 @@ class list_ImportItemsAction extends change_JSONAction
 		}
 		if ($e instanceof BaseException)
 		{
-			return $this->sendJSONError(f_Locale::translateUI('&modules.list.bo.general.Error-importing-list;', array('exception' => f_Locale::translateUI($e->getLocaleMessage()))));
+			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.error-importing-list', array('ucf'), array('exception' => LocaleService::getInstance()->trans($e->getLocaleMessage() /* @TODO CHECK */))));
 		}
 		else
 		{
-			return $this->sendJSONError(f_Locale::translateUI('&modules.list.bo.general.Error-importing-list;', array('exception' => $e->getMessage())));
+			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.error-importing-list', array('ucf'), array('exception' => $e->getMessage())));
 		}
 	}
 }
