@@ -9,6 +9,8 @@ interface list_ListItemsService
 	 */
 	public function getItems();
 	
+	// /!\ Please do not remove these comments.
+	
 	/**
 	 * Optional.
 	 * @param string $value

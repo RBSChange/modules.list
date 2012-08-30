@@ -65,7 +65,7 @@ class list_StaticListItem extends list_Item
 		$this->setValue($value);
 	}
 
-	public function setLabel()
+	public function setLabel($label)
 	{
 		throw new Exception("Can not set label on ".get_class($this));
 	}

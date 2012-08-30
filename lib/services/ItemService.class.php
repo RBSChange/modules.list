@@ -21,15 +21,6 @@ class list_ItemService extends f_persistentdocument_DocumentService
 	{
 		return $this->getPersistentProvider()->createQuery('modules_list/item');
 	}
-
-	/**
-	 * @todo WTF? Deprecate?
-	 * @return list_persistentdocument_item
-	 */
-	public function getItems()
-	{
-		
-	}
 	
 	/**
 	 * @param list_persistentdocument_item $document
@@ -75,5 +66,14 @@ class list_ItemService extends f_persistentdocument_DocumentService
 		{
 			throw new IllegalOperationException('Document item cannot be deleted (' . ($count - 1) . ' usage)');
 		}
+	}
+	
+	// Deprecated
+	
+	/**
+	 * @deprecated
+	 */
+	public function getItems()
+	{
 	}
 }
