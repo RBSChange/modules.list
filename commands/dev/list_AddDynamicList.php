@@ -85,12 +85,12 @@ class commands_list_AddDynamicList extends c_ChangescriptCommand
 		
 		$generator = new builder_Generator();
 		$generator->setTemplateDir(f_util_FileUtils::buildProjectPath('modules', 'list', 'templates', 'builder'));
-		$generator->assign_by_ref('author', $this->getAuthor());
-		$generator->assign_by_ref('shortName', $listShortName);
-		$generator->assign_by_ref('listId', $listId);
-		$generator->assign_by_ref('module', $moduleName);
-		$generator->assign_by_ref('date', date('r'));
-		$generator->assign_by_ref('class', $serviceClass);
+		$generator->assign('author', $this->getAuthor());
+		$generator->assign('shortName', $listShortName);
+		$generator->assign('listId', $listId);
+		$generator->assign('module', $moduleName);
+		$generator->assign('date', date('r'));
+		$generator->assign('class', $serviceClass);
 		$result = $generator->fetch('dynamiclistService.tpl');
 		
 		f_util_FileUtils::mkdir($servicesFolder);
@@ -116,7 +116,7 @@ class commands_list_AddDynamicList extends c_ChangescriptCommand
 		}
 		else 
 		{
-			$generator->assign_by_ref('shortNameUcf', $listShortNameUcf);
+			$generator->assign('shortNameUcf', $listShortNameUcf);
 			$result = $generator->fetch('listXmlImport.tpl');
 			f_util_FileUtils::mkdir($setupFolder);
 			f_util_FileUtils::write($scriptFile, $result);
