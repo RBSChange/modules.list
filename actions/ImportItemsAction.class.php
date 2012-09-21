@@ -129,7 +129,7 @@ class list_ImportItemsAction extends change_JSONAction
 		}
 		if ($e instanceof BaseException)
 		{
-			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.error-importing-list', array('ucf'), array('exception' => LocaleService::getInstance()->trans($e->getLocaleMessage() /* @TODO CHECK */))));
+			return $this->sendJSONError(LocaleService::getInstance()->trans('m.list.bo.general.error-importing-list', array('ucf'), array('exception' => $e->getLocaleMessage())));
 		}
 		else
 		{
