@@ -19,7 +19,7 @@ interface list_ListItemsService
 	
 	/**
 	 * Optional.
-	 * @param Array $paramters
+	 * @param array $paramters
 	 */
 //	public function setParameters($paramters);
 }
