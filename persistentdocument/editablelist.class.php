@@ -29,7 +29,7 @@ class list_persistentdocument_editablelist extends list_persistentdocument_edita
 					continue;
 				}
 			}
-			else if (!$this->getUseVoIfNotTranslated() || $item->getVoPublicationstatus() != 'PUBLICATED')
+			else if (!$this->getUseVoIfNotTranslated() || $item->getVoPublicationstatus() != 'PUBLISHED')
 			{
 				continue;
 			}
