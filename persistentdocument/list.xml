@@ -4,7 +4,7 @@
 	model-version="1.0" publish-on-day-change="false" backoffice-indexable="false" has-url="false">
 	<properties>
 		<add name="listid" type="String" min-occurs="1">
-			<constraints>matches:^(modules_){0,1}[a-z0-9]+/[a-z0-9]+$;unique:true</constraints>
+			<constraints>regexp:/^(modules_){0,1}[a-z0-9]+\/[a-z0-9]+$/;unique:true</constraints>
 		</add>
 		<add name="description" type="LongString" min-occurs="0" max-occurs="1" />
 	</properties>
